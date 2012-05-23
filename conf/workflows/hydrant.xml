@@ -247,7 +247,7 @@
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
-        <configuration key="target-tags">engage</configuration>
+        <configuration key="target-tags">engage, audio</configuration>
         <configuration key="encoding-profile">flash-audio.http</configuration>
       </configurations>
     </operation>   
@@ -306,7 +306,7 @@
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
-        <configuration key="target-tags">rss, atom</configuration>
+        <configuration key="target-tags">rss, atom, audio</configuration>
         <configuration key="encoding-profile">feed-m4a.http</configuration>
       </configurations>
     </operation>
@@ -318,7 +318,7 @@
       <configurations>
         <configuration key="source-flavor">presentation/trimmed</configuration>
         <configuration key="target-flavor">presentation/delivery</configuration>
-        <configuration key="target-tags">rss, atom</configuration>
+        <configuration key="target-tags">rss, atom, audio</configuration>
         <configuration key="encoding-profile">feed-m4a.http</configuration>
       </configurations>
     </operation>
@@ -454,7 +454,7 @@
       exception-handler-workflow="error"
       description="Distributing to Hydrant">
       <configurations>
-        <configuration key="source-tags">streaming</configuration>
+        <configuration key="source-tags">streaming,-audio</configuration>
         <configuration key="target-tags">hydrant</configuration>
       </configurations>
     </operation>
