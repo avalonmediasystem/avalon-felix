@@ -1,0 +1,63 @@
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] frame I:15    Avg QP:14.27  size: 30483
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] frame P:817   Avg QP:16.97  size:  5253
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] frame B:2609  Avg QP:20.80  size:   890
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] consecutive B-frames: 10.3%  0.9%  2.2%  3.8% 12.2% 34.2% 12.4%  2.6%  1.6%  1.7%  1.3%  1.0%  2.6%  0.4%  0.4%  0.5% 11.9%
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] mb I  I16..4: 29.3% 40.0% 30.8%
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] mb P  I16..4:  6.3%  0.0%  2.7%  P16..4: 30.8%  6.9%  3.7%  0.0%  0.0%    skip:49.7%
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] mb B  I16..4:  0.5%  0.0%  0.1%  B16..8: 21.5%  1.3%  0.1%  direct: 1.1%  skip:75.4%  L0:47.7% L1:50.2% BI: 2.1%
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] 8x8 transform intra:5.7% inter:67.7%
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] coded y,uvDC,uvAC intra: 33.7% 53.7% 28.5% inter: 3.8% 8.1% 0.7%
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] i16 v,h,dc,p: 48% 26%  9% 16%
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] i8 v,h,dc,ddl,ddr,vr,hd,vl,hu: 38% 23% 16%  3%  3%  5%  3%  4%  4%
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] i4 v,h,dc,ddl,ddr,vr,hd,vl,hu: 29% 32% 19%  2%  3%  4%  3%  3%  5%
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] i8c dc,h,v,p: 51% 20% 24%  5%
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] Weighted P-Frames: Y:3.2% UV:2.8%
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] ref P L0: 67.4%  4.3% 15.3%  4.9%  3.8%  3.3%  1.0%  0.0%
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] ref B L0: 82.4% 11.3%  4.4%  1.2%  0.6%
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] ref B L1: 91.5%  8.5%
+2012-06-22 13:04:27  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] kb/s:411.04
+2012-06-22 13:04:27  INFO (AbstractCmdlineEncoderEngine:257) - Video track videolong.mp4 successfully encoded using profile 'youtube-med.http'
+2012-06-22 13:04:27  INFO (ComposerServiceImpl:219) - Copied the encoded file to the workspace at http://localhost:8080/files/collection/composer/166.mp4
+2012-06-22 13:04:27  INFO (ComposerServiceImpl:221) - Deleted the local copy of the encoded file at /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/track-3cd21e56-1557-4bff-96c2-2a3b23a54f8e/videolong_e9ab09ce-8e60-430d-baee-37e8eedf196d-yt-med.mp4
+2012-06-22 13:04:41  INFO (ComposerServiceImpl:485) - creating an image using video track track-3
+2012-06-22 13:04:41  INFO (AbstractCmdlineEncoderEngine:233) - Executing encoding command: ffmpeg -strict unofficial -y -i /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/track-3cd21e56-1557-4bff-96c2-2a3b23a54f8e/videolong.mp4 -ss 1 -r 1 -vframes 1 -vf scale=-1:54 -f image2 /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/track-3cd21e56-1557-4bff-96c2-2a3b23a54f8e/videolong_1_e74019fd-9253-4edf-8eec-9468a7a4aeb0-feed.jpg 
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - ffmpeg version 0.10.2.git-d3d5e84 Copyright (c) 2000-2012 the FFmpeg developers
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - major_brand     : isom
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - minor_version   : 512
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - compatible_brands: mp41
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - encoder         : VisualHub 1.28
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - handler_name    : VideoHandler
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - handler_name    :
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - Incompatible pixel format 'yuv420p' for codec 'mjpeg', auto-selecting format 'yuvj420p'
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - [buffer @ 0x7f8f61432ee0] w:854 h:480 pixfmt:yuv420p tb:1/1000000 sar:1/1 sws_param:flags=2
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - [scale @ 0x7f8f614339e0] w:854 h:480 fmt:yuv420p sar:1/1 -> w:96 h:54 fmt:yuvj420p sar:1281/1280 flags:0x4
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - major_brand     : isom
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - minor_version   : 512
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - compatible_brands: mp41
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - encoder         : Lavf54.3.100
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 13:04:41  INFO (FFmpegEncoderEngine:174) - handler_name    : VideoHandler
+2012-06-22 13:04:41  INFO (AbstractCmdlineEncoderEngine:257) - Video track videolong.mp4 successfully encoded using profile 'feed-cover.http'
+2012-06-22 13:04:42  INFO (ComposerServiceImpl:862) - Deleted local copy of image file at /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/track-3cd21e56-1557-4bff-96c2-2a3b23a54f8e/videolong_1_e74019fd-9253-4edf-8eec-9468a7a4aeb0-feed.jpg
+2012-06-22 13:05:01  INFO (DownloadDistributionService:191) - Distributing 130f804a-a796-4e9e-9423-e49362e1ab34 to /Users/phuongdh/Documents/hydrant-felix/work/content/downloads/a6c13c9b-9271-4adc-8440-d3949ed26c98/130f804a-a796-4e9e-9423-e49362e1ab34/videolong.mp4
+2012-06-22 13:05:02  INFO (DownloadDistributionService:208) - Finished distribution of http://localhost:8080/files/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/130f804a-a796-4e9e-9423-e49362e1ab34/videolong.mp4
+2012-06-22 13:05:02  INFO (DownloadDistributionService:191) - Distributing 70dab7f5-6234-47ce-ac8f-b6d1b255c832 to /Users/phuongdh/Documents/hydrant-felix/work/content/downloads/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml
+2012-06-22 13:05:02  INFO (DownloadDistributionService:208) - Finished distribution of http://localhost:8080/files/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml
+2012-06-22 13:05:07  INFO (WorkspaceImpl:246) - Downloading http://localhost:8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml to /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/http_localhost_8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml
+2012-06-22 13:05:12  INFO (WorkspaceImpl:246) - Downloading http://localhost:8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml to /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/http_localhost_8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml
+2012-06-22 13:05:12  INFO (WorkspaceImpl:246) - Downloading http://localhost:8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml to /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/http_localhost_8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml
+2012-06-22 13:05:17  INFO (WorkspaceImpl:246) - Downloading http://localhost:8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml to /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/http_localhost_8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml
+2012-06-22 13:05:17  INFO (ArchiveWorkflowOperationHandler:172) - Archiving media package a6c13c9b-9271-4adc-8440-d3949ed26c98
+2012-06-22 13:05:17  INFO (EpisodeServiceImpl:385) - Added mediapackage a6c13c9b-9271-4adc-8440-d3949ed26c98 to the archive
+2012-06-22 13:05:17  INFO (WorkspaceImpl:246) - Downloading http://localhost:8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml to /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/http_localhost_8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml
+2012-06-22 13:05:22  INFO (WorkspaceImpl:246) - Downloading http://localhost:8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml to /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/http_localhost_8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml
+2012-06-22 13:05:22  INFO (PublishWorkflowOperationHandler:172) - Publishing media package a6c13c9b-9271-4adc-8440-d3949ed26c98 to search index
+2012-06-22 13:05:22  INFO (WorkspaceImpl:246) - Downloading http://localhost:8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml to /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/http_localhost_8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml
+2012-06-22 13:05:22  INFO (SearchServiceImpl:369) - Added mediapackage a6c13c9b-9271-4adc-8440-d3949ed26c98 to the search index
+2012-06-22 13:05:22  INFO (WorkspaceImpl:246) - Downloading http://localhost:8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml to /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/http_localhost_8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml
+2012-06-22 13:05:27  INFO (WorkspaceImpl:246) - Downloading http://localhost:8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml to /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/http_localhost_8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml
+2012-06-22 13:05:27  INFO (WorkspaceImpl:246) - Downloading http://localhost:8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml to /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/http_localhost_8080/static/a6c13c9b-9271-4adc-8440-d3949ed26c98/70dab7f5-6234-47ce-ac8f-b6d1b255c832/dublincore.xml

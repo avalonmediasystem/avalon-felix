@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 32
+/svn/!svn/ver/12276/MH/trunk/etc
+END
+system.properties
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/12162/MH/trunk/etc/system.properties
+END
+config.properties
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/!svn/ver/12100/MH/trunk/etc/config.properties
+END
+gosh_profile
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/svn/!svn/ver/12100/MH/trunk/etc/gosh_profile
+END
+motd
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/12100/MH/trunk/etc/motd
+END

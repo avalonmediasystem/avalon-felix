@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/svn/!svn/ver/12100/MH/trunk/lib/felix
+END
+org.apache.felix.gogo.shell-0.10.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/!svn/ver/12100/MH/trunk/lib/felix/org.apache.felix.gogo.shell-0.10.0.jar
+END
+org.apache.felix.bundlerepository-1.6.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/12100/MH/trunk/lib/felix/org.apache.felix.bundlerepository-1.6.6.jar
+END
+org.apache.felix.gogo.command-0.12.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/12100/MH/trunk/lib/felix/org.apache.felix.gogo.command-0.12.0.jar
+END
+org.apache.felix.gogo.runtime-0.10.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/12100/MH/trunk/lib/felix/org.apache.felix.gogo.runtime-0.10.0.jar
+END

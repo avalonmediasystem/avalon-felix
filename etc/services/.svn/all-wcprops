@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svn/!svn/ver/12276/MH/trunk/etc/services
+END
+org.opencastproject.serviceregistry.impl.ServiceRegistryJpaImpl.properties
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/svn/!svn/ver/12100/MH/trunk/etc/services/org.opencastproject.serviceregistry.impl.ServiceRegistryJpaImpl.properties
+END
+org.opencastproject.capture.impl.SchedulerImpl.properties
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svn/!svn/ver/12100/MH/trunk/etc/services/org.opencastproject.capture.impl.SchedulerImpl.properties
+END
+org.opencastproject.oaipmh.server.OaiPmhRepositoryServlet.properties
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/!svn/ver/12100/MH/trunk/etc/services/org.opencastproject.oaipmh.server.OaiPmhRepositoryServlet.properties
+END
+org.opencastproject.usertracking.impl.UserTrackingServiceImpl.properties
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/svn/!svn/ver/12100/MH/trunk/etc/services/org.opencastproject.usertracking.impl.UserTrackingServiceImpl.properties
+END
+org.opencastproject.kernel.mail.SmtpService.properties
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svn/!svn/ver/12276/MH/trunk/etc/services/org.opencastproject.kernel.mail.SmtpService.properties
+END
+org.opencastproject.capture.impl.ConfigurationManager.properties
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/12100/MH/trunk/etc/services/org.opencastproject.capture.impl.ConfigurationManager.properties
+END
+org.opencastproject.capture.impl.CaptureAgentImpl.properties
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/12100/MH/trunk/etc/services/org.opencastproject.capture.impl.CaptureAgentImpl.properties
+END
+org.ops4j.pax.logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/!svn/ver/12100/MH/trunk/etc/services/org.ops4j.pax.logging.properties
+END
+org.opencastproject.export.distribution.ExportUi.properties
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svn/!svn/ver/12100/MH/trunk/etc/services/org.opencastproject.export.distribution.ExportUi.properties
+END
+org.opencastproject.oaipmh.harvester.OaiPmhHarvester.properties
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svn/!svn/ver/12100/MH/trunk/etc/services/org.opencastproject.oaipmh.harvester.OaiPmhHarvester.properties
+END
+org.opencastproject.analysis.vsegmenter.VideoSegmenter.properties
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/!svn/ver/12100/MH/trunk/etc/services/org.opencastproject.analysis.vsegmenter.VideoSegmenter.properties
+END
+org.opencastproject.loadtest.impl.LoadTestFactory.properties
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svn/!svn/ver/12100/MH/trunk/etc/services/org.opencastproject.loadtest.impl.LoadTestFactory.properties
+END
+org.opencastproject.workflow.impl.WorkflowServiceImpl.properties
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/!svn/ver/12100/MH/trunk/etc/services/org.opencastproject.workflow.impl.WorkflowServiceImpl.properties
+END
+org.opencastproject.distribution.youtube.YoutubeDistributionService.properties
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/svn/!svn/ver/12100/MH/trunk/etc/services/org.opencastproject.distribution.youtube.YoutubeDistributionService.properties
+END
+org.opencastproject.capture.impl.CaptureFiles.properties
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/12100/MH/trunk/etc/services/org.opencastproject.capture.impl.CaptureFiles.properties
+END
+java.util.logging.properties
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/!svn/ver/12100/MH/trunk/etc/services/java.util.logging.properties
+END

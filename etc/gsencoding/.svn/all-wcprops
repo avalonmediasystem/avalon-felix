@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/12100/MH/trunk/etc/gsencoding
+END
+engage-movies.properties
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12100/MH/trunk/etc/gsencoding/engage-movies.properties
+END
+feed-images.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/12100/MH/trunk/etc/gsencoding/feed-images.properties
+END
+matterhorn-images.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/12100/MH/trunk/etc/gsencoding/matterhorn-images.properties
+END
+engage-images.properties
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/!svn/ver/12100/MH/trunk/etc/gsencoding/engage-images.properties
+END
+other-movies.properties
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/!svn/ver/12100/MH/trunk/etc/gsencoding/other-movies.properties
+END
+feed-movies.properties
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/!svn/ver/12100/MH/trunk/etc/gsencoding/feed-movies.properties
+END
+matterhorn-movies.properties
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/12100/MH/trunk/etc/gsencoding/matterhorn-movies.properties
+END

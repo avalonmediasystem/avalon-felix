@@ -1,0 +1,728 @@
+2012-06-22 12:51:10  INFO (OrganizationDirectoryServiceImpl:262) - Registering organization 'mh_default_org'
+2012-06-22 12:51:10  INFO (RestPublisher:222) - Registered REST endpoint at /capture-admin
+2012-06-22 12:51:10  INFO (RestPublisher:222) - Registered REST endpoint at /org
+2012-06-22 12:51:11  INFO (SmtpService:124) - Mail transport protocol is 'smtp'
+2012-06-22 12:51:11  INFO (SmtpService:195) - Mail service configured with localhost
+2012-06-22 12:51:11  INFO (SmtpService:199) - mail.smtp.port: 25
+2012-06-22 12:51:11  INFO (SmtpService:199) - mail.from: matterhorn@localhost
+2012-06-22 12:51:11  INFO (SmtpService:199) - mail.transport.protocol: smtp
+2012-06-22 12:51:11  INFO (SmtpService:199) - mail.smtp.host: localhost
+2012-06-22 12:51:11  INFO (SmtpService:199) - mail.smtp.auth: false
+2012-06-22 12:51:11  INFO (RestPublisher:222) - Registered REST endpoint at /roles
+2012-06-22 12:51:11  INFO (SpringSecurityConfigurationArtifactInstaller:115) - registered OsgiBundleXmlApplicationContext(bundle=matterhorn-kernel, config=file:/Users/phuongdh/Documents/hydrant-felix/etc/security/mh_default_org.xml): startup date [Wed Dec 31 19:00:00 EST 1969]; root of context hierarchy for mh_default_org
+2012-06-22 12:51:11  INFO (StaticResourceServlet:79) - serving static files from '/Users/phuongdh/Documents/hydrant-felix/work/content/downloads'
+2012-06-22 12:51:11  INFO (RestPublisher:222) - Registered REST endpoint at /mediapackage
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/other-movies.properties
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile dvd-ntsc.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile dvd-pal.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/feed-movies.properties
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile feed-m4a.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile feed-avi.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/feed-images.properties
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile feed-cover.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/matterhorn-movies.properties
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile audio-only.work
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile video-only.work
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile trim.work
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile video-segmentation.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile mux-av.work
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile av.work
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/youtube-movies.properties
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile youtube-med.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile youtube-vga-med.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile youtube-high.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile youtube-vga-hd.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile youtube-hd.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile youtube-vga-high.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/engage-movies.properties
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile flash-preview.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile flash-audio.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile flash-vga.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile flash.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/engage-movies-multi-quality.properties
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile flash-high.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile flash-vga-medium.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile flash-vga-low.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile flash-vga-hd.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile flash-hd.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile flash-medium.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile flash-low.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile flash-vga-high.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/epiphan-split.properties
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile epiphan.presenter
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile epiphan.presentation
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/matterhorn-branding.properties
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile watermark.branding
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile credits.branding
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile copy.branding
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile prepare-cat.branding
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/matterhorn-images.properties
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile image-conversion.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile text-analysis.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/engage-images.properties
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile search-cover.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile player-preview.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile player-slides.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/itunes-movies.properties
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile itunes.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile itunes-audio.http
+2012-06-22 12:51:11  INFO (EncodingProfileScanner:247) - Installed profile itunes-vga.http
+2012-06-22 12:51:12  INFO (CaptionUploadWorkflowOperationHandler:65) - Registering caption upload hold state ui from classpath /ui/operation/caption/index.html
+2012-06-22 12:51:12  INFO (DownloadDVDWorkflowOperationHandler:66) - Registering download-DVD hold state ui from classpath /ui/operation/download-dvd/index.html
+2012-06-22 12:51:12  INFO (ErrorResolutionWorkflowOperationHandler:51) - Registering retry strategy failover hold state ui from classpath /ui/operation/retry-strategy/index.html
+2012-06-22 12:51:12  INFO (ReviewWorkflowOperationHandler:67) - Registering review hold state ui from classpath /ui/operation/review/index.html
+2012-06-22 12:51:12  INFO (RestPublisher:222) - Registered REST endpoint at /info
+2012-06-22 12:51:12  INFO (DictionaryScanner:70) - Loading language pack from /Users/phuongdh/Documents/hydrant-felix/etc/dictionaries/de.csv
+2012-06-22 12:51:13  INFO (RestPublisher:222) - Registered REST endpoint at /users
+2012-06-22 12:51:13  INFO (ServiceRegistryJpaImpl:734) - Registering http://localhost:8080 with a maximum load of 4
+2012-06-22 12:51:13  INFO (RestPublisher:222) - Registered REST endpoint at /caption
+2012-06-22 12:51:13  INFO (ServiceRegistryJpaImpl:415) - Set max attempts before error state to 1
+2012-06-22 12:51:13  INFO (WorkingFileRepositoryImpl:121) - Usable space 321 Gb out of 464 Gb (69%)
+2012-06-22 12:51:13  INFO (WorkspaceImpl:439) - Mapping workspace to working file repository using /Users/phuongdh/Documents/hydrant-felix/work/content/files
+2012-06-22 12:51:13  INFO (WorkspaceImpl:105) - CONFIG org.opencastproject.workspace.rootdir: /Users/phuongdh/Documents/hydrant-felix/work/content/workspace
+2012-06-22 12:51:13  INFO (WorkspaceImpl:150) - Hard links between the working file repository and the workspace enabled
+2012-06-22 12:51:14  INFO (SchedulerServiceDatabaseImpl:71) - Activating persistence manager for scheduler
+2012-06-22 12:51:14  INFO (SeriesServiceDatabaseImpl:86) - Activating persistence manager for series
+2012-06-22 12:51:14  INFO (SeriesServiceImpl:119) - Activating Series Service
+2012-06-22 12:51:14  INFO (RestPublisher:222) - Registered REST endpoint at /series
+2012-06-22 12:51:14  INFO (DownloadDistributionService:115) - Download distribution directory is /Users/phuongdh/Documents/hydrant-felix/work/content/downloads
+2012-06-22 12:51:15  INFO (RestPublisher:222) - Registered REST endpoint at /distribution/download
+2012-06-22 12:51:15  INFO (YoutubeDistributionService:154) - Update method from managed service
+2012-06-22 12:51:15  INFO (RestPublisher:222) - Registered REST endpoint at /youtube
+2012-06-22 12:51:15  INFO (IngestServiceImpl:156) - Ingest Service started.
+2012-06-22 12:51:15  INFO (RestPublisher:222) - Registered REST endpoint at /ingest
+2012-06-22 12:51:15  INFO (SchedulerServiceImpl:166) - Activating Scheduler Service
+2012-06-22 12:51:15  INFO (RestPublisher:222) - Registered REST endpoint at /recordings
+2012-06-22 12:51:15  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/export.xml
+2012-06-22 12:51:15  INFO (WorkflowRestService:155) - configured server url is http://localhost:8080
+2012-06-22 12:51:16  INFO (RestPublisher:222) - Registered REST endpoint at /workflow
+2012-06-22 12:51:16  INFO (CaptureAgentStateServiceImpl:131) - CaptureAgentStateServiceImpl starting.
+2012-06-22 12:51:16  WARN (AgentImpl:278) - Null friendly name list for agent demo_capture_agent.  Capabilities filtering aborted.
+2012-06-22 12:51:16  INFO (CaptureAgentStateServiceImpl:651) - Roles 'ROLE_INSTRUCTOR, ROLE_ADMIN' may schedule 'demo_capture_agent'
+2012-06-22 12:51:16  INFO (EpisodeServiceImpl:275) - Setting up solr search index at /Users/phuongdh/Documents/hydrant-felix/work/content/archive
+2012-06-22 12:51:16  INFO (EpisodeServiceImpl:282) - solr config directory doesn't exist.  Creating /Users/phuongdh/Documents/hydrant-felix/work/content/archive/conf
+2012-06-22 12:51:16  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/watermark.xml
+2012-06-22 12:51:16  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/multi-quality.xml
+2012-06-22 12:51:16  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/compose-distribute-publish.xml
+2012-06-22 12:51:16  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/default-error-handler.xml
+2012-06-22 12:51:16  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/default.xml
+2012-06-22 12:51:16  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/passthrough.xml
+2012-06-22 12:51:16  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/email-error-handler.xml
+2012-06-22 12:51:16  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/create-dvd.xml
+2012-06-22 12:51:16  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/retract.xml
+2012-06-22 12:51:16  INFO (RestPublisher:222) - Registered REST endpoint at /episode
+2012-06-22 12:51:16  INFO (FileUploadServiceImpl:85) - File Upload Service activated. Storage directory is /Users/phuongdh/Documents/hydrant-felix/work/content/fileupload-tmp
+2012-06-22 12:51:16  INFO (FileUploadRestService:88) - File Upload REST Endpoint activated
+2012-06-22 12:51:16  INFO (RestPublisher:222) - Registered REST endpoint at /upload
+2012-06-22 12:51:17  INFO (InboxScannerService:148) - Now watching inbox /Users/phuongdh/Documents/hydrant-felix/inbox
+2012-06-22 12:51:17  INFO (RestPublisher:222) - Registered REST endpoint at /files
+2012-06-22 12:51:17  INFO (RestPublisher:222) - Registered REST endpoint at /services
+2012-06-22 12:51:17  INFO (UserAndSeriesLoader$Loader:128) - Adding sample series...
+2012-06-22 12:51:17  INFO (RestPublisher:222) - Registered REST endpoint at /analysis/videosegmenter
+2012-06-22 12:51:17  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:51:17  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:51:17  INFO (RestPublisher:222) - Registered REST endpoint at /composer/ffmpeg
+2012-06-22 12:51:17  INFO (TrimWorkflowOperationHandler:91) - Registering review / trim hold state ui from classpath /ui/operation/trim/index.html
+2012-06-22 12:51:17  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:51:18  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:51:18  INFO (RestPublisher:222) - Registered REST endpoint at /inspection
+2012-06-22 12:51:18  WARN (StreamingDistributionService:106) - Stream url was not set (org.opencastproject.streaming.url)
+2012-06-22 12:51:18  WARN (StreamingDistributionService:113) - Streaming distribution directory must be set (org.opencastproject.streaming.directory)
+2012-06-22 12:51:18  INFO (StreamingDistributionService:125) - Streaming distribution directory is null
+2012-06-22 12:51:18  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:51:18  INFO (RestPublisher:222) - Registered REST endpoint at /distribution/streaming
+2012-06-22 12:51:18  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:51:18  INFO (SearchServiceDatabaseImpl:77) - Activating persistence manager for search service
+2012-06-22 12:51:18  INFO (SearchServiceImpl:251) - Setting up solr search index at /Users/phuongdh/Documents/hydrant-felix/work/content/searchindex
+2012-06-22 12:51:18  INFO (SearchServiceImpl:258) - solr config directory doesn't exist.  Creating /Users/phuongdh/Documents/hydrant-felix/work/content/searchindex/conf
+2012-06-22 12:51:18  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:51:18  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:51:18  INFO (SearchServiceImpl:482) - Finished populating search index
+2012-06-22 12:51:18  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/business_audio.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/teaching_education_audio.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/series.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/literature_audio.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/search.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/subject_audio.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/history_video.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/social_science_video.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/health_medicine_audio.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/language_video.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/teaching_education_video.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/fine_arts_audio.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/latest.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/fine_arts_video.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/business_video.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/society_video.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/social_science_audio.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/literature_video.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/history_audio.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/subject_video.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/humanities_audio.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/health_medicine_video.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/science_audio.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/custom.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/series_audio.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/science_video.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/engineering_video.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/engineering_audio.properties
+2012-06-22 12:51:18  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/language_audio.properties
+2012-06-22 12:51:19  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:51:19  INFO (UserAndSeriesLoader:210) - Adding sample students, usernames and passwords are student1/student1... student200/student200
+2012-06-22 12:51:19  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/aggregation.properties
+2012-06-22 12:51:19  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/society_audio.properties
+2012-06-22 12:51:19  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/humanities_video.properties
+2012-06-22 12:51:19  INFO (RestPublisher:222) - Registered REST endpoint at /search
+2012-06-22 12:51:19  INFO (UserTrackingRestService:112) - configured server url is http://localhost:8080
+2012-06-22 12:51:19  INFO (RestPublisher:222) - Registered REST endpoint at /usertracking
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'business_video' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'history_video' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'science_audio' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'teaching_education_audio' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'aggregated' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'engineering_audio' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'history_audio' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'fine_arts_audio' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'series' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'social_science_video' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'custom' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'language_audio' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'literature_audio' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'society_video' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'business_audio' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'social_science_audio' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'event_audio' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'search' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'society_audio' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'language_video' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'humanities_audio' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'science_video' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'event_video' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'humanities_video' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'engineering_video' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'series_audio' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'latest' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'literature_video' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'health_medicine_audio' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'teaching_education_video' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'health_medicine_video' feed
+2012-06-22 12:51:19  INFO (FeedServlet:212) - Registering 'fine_arts_video' feed
+2012-06-22 12:51:19  INFO (RestPublisher:222) - Registered REST endpoint at /analysis/text
+2012-06-22 12:51:19  INFO (AclDistributionService:117) - Download distribution directory is /Users/phuongdh/Documents/hydrant-felix/work/content/downloads
+2012-06-22 12:51:19  INFO (RestPublisher:222) - Registered REST endpoint at /distribution/acl
+2012-06-22 12:51:19  INFO (Activator:33) - Starting admin ui
+2012-06-22 12:51:19  INFO (AnnotationRestService:96) - configured server url is http://localhost:8080
+2012-06-22 12:51:19  INFO (UserAndSeriesLoader:210) - Adding sample students, usernames and passwords are student1/student1... student200/student200
+2012-06-22 12:51:19  INFO (RestPublisher:222) - Registered REST endpoint at /annotation
+2012-06-22 12:51:20  INFO (UserAndSeriesLoader:210) - Adding sample instructors, usernames and passwords are instructor1/instructor1... instructor20/instructor20
+2012-06-22 12:51:20  INFO (UserAndSeriesLoader:210) - Adding sample instructors, usernames and passwords are instructor1/instructor1... instructor20/instructor20
+2012-06-22 12:51:20  INFO (UserAndSeriesLoader:210) - Adding sample admins, usernames and passwords are admin1/admin1... admin10/admin10
+2012-06-22 12:51:20  INFO (UserAndSeriesLoader:210) - Adding sample admins, usernames and passwords are admin1/admin1... admin10/admin10
+2012-06-22 12:51:20  INFO (UserAndSeriesLoader$Loader:190) - Finished loading sample series and users
+2012-06-22 12:51:21  INFO (DictionaryScanner:93) - Finished loading language pack from /Users/phuongdh/Documents/hydrant-felix/etc/dictionaries/de.csv
+2012-06-22 12:51:21  INFO (DictionaryScanner:70) - Loading language pack from /Users/phuongdh/Documents/hydrant-felix/etc/dictionaries/en.csv
+2012-06-22 12:51:23  INFO (DictionaryScanner:93) - Finished loading language pack from /Users/phuongdh/Documents/hydrant-felix/etc/dictionaries/en.csv
+2012-06-22 12:51:23  INFO (DictionaryScanner:70) - Loading language pack from /Users/phuongdh/Documents/hydrant-felix/etc/dictionaries/es.csv
+2012-06-22 12:51:24  INFO (DictionaryScanner:93) - Finished loading language pack from /Users/phuongdh/Documents/hydrant-felix/etc/dictionaries/es.csv
+2012-06-22 12:52:30  INFO (IngestServiceImpl:829) - Adding element of type Catalog to mediapackage 23a0c0b0-fa65-44f8-9849-60343dbe429b
+2012-06-22 12:52:30  INFO (FileUploadServiceImpl:105) - Creating new upload job: FileUploadJob(id=b9ee2a2d-ef2f-4603-aea6-d6600093cdd0, filename=videolong.mp4)
+2012-06-22 12:52:30  INFO (FileUploadServiceImpl:414) - Moving payload of job b9ee2a2d-ef2f-4603-aea6-d6600093cdd0 to MediaPackage 23a0c0b0-fa65-44f8-9849-60343dbe429b
+2012-06-22 12:52:30  INFO (FileUploadServiceImpl:304) - Upload job completed: FileUploadJob(id=b9ee2a2d-ef2f-4603-aea6-d6600093cdd0, filename=videolong.mp4)
+2012-06-22 12:52:39  INFO (InspectWorkflowOperationHandler:128) - Inspecting track 'track-1' of 23a0c0b0-fa65-44f8-9849-60343dbe429b
+2012-06-22 12:52:44  INFO (MediaInspectionServiceImpl:426) - Successfully inspected track http://localhost:8080/files/mediapackage/23a0c0b0-fa65-44f8-9849-60343dbe429b/track-b9ee2a2d-ef2f-4603-aea6-d6600093cdd0/videolong.mp4
+2012-06-22 12:52:54  INFO (ComposeWorkflowOperationHandler:166) - Skipping encoding of media package to 'epiphan.presenter': no suitable input tracks found
+2012-06-22 12:52:59  INFO (ComposeWorkflowOperationHandler:166) - Skipping encoding of media package to 'epiphan.presentation': no suitable input tracks found
+2012-06-22 12:53:09  INFO (PrepareAVWorkflowOperationHandler:196) - No audio/video tracks with flavor 'presentation/source' found to prepare
+2012-06-22 12:53:29  INFO (ComposerServiceImpl:485) - creating an image using video track track-3
+2012-06-22 12:53:29  INFO (AbstractCmdlineEncoderEngine:233) - Executing encoding command: ffmpeg -strict unofficial -y -i /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/23a0c0b0-fa65-44f8-9849-60343dbe429b/track-b9ee2a2d-ef2f-4603-aea6-d6600093cdd0/videolong.mp4 -ss 1 -r 1 -vframes 1 -vf scale=-1:480 -f image2 /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/23a0c0b0-fa65-44f8-9849-60343dbe429b/track-b9ee2a2d-ef2f-4603-aea6-d6600093cdd0/videolong_1_8472fd18-5006-48e1-b655-27e096df4f74-player.jpg 
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - ffmpeg version 0.10.2.git-d3d5e84 Copyright (c) 2000-2012 the FFmpeg developers
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - major_brand     : isom
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - minor_version   : 512
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - compatible_brands: mp41
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - encoder         : VisualHub 1.28
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - handler_name    : VideoHandler
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - handler_name    :
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - Incompatible pixel format 'yuv420p' for codec 'mjpeg', auto-selecting format 'yuvj420p'
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - [buffer @ 0x7f9559432f20] w:854 h:480 pixfmt:yuv420p tb:1/1000000 sar:1/1 sws_param:flags=2
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - [scale @ 0x7f9559433540] w:854 h:480 fmt:yuv420p sar:1/1 -> w:854 h:480 fmt:yuvj420p sar:1/1 flags:0x4
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - major_brand     : isom
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - minor_version   : 512
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - compatible_brands: mp41
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - encoder         : Lavf54.3.100
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:53:29  INFO (FFmpegEncoderEngine:174) - handler_name    : VideoHandler
+2012-06-22 12:53:29  INFO (AbstractCmdlineEncoderEngine:257) - Video track videolong.mp4 successfully encoded using profile 'player-preview.http'
+2012-06-22 12:53:29  INFO (ComposerServiceImpl:862) - Deleted local copy of image file at /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/23a0c0b0-fa65-44f8-9849-60343dbe429b/track-b9ee2a2d-ef2f-4603-aea6-d6600093cdd0/videolong_1_8472fd18-5006-48e1-b655-27e096df4f74-player.jpg
+2012-06-22 12:53:44  INFO (ComposerServiceImpl:485) - creating an image using video track track-3
+2012-06-22 12:53:44  INFO (AbstractCmdlineEncoderEngine:233) - Executing encoding command: ffmpeg -strict unofficial -y -i /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/23a0c0b0-fa65-44f8-9849-60343dbe429b/track-b9ee2a2d-ef2f-4603-aea6-d6600093cdd0/videolong.mp4 -ss 1 -r 1 -vframes 1 -vf scale=160:-1 -f image2 /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/23a0c0b0-fa65-44f8-9849-60343dbe429b/track-b9ee2a2d-ef2f-4603-aea6-d6600093cdd0/videolong_1_f9f8996c-dfba-488d-8e32-75a50c5ca9fd-search.jpg 
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - ffmpeg version 0.10.2.git-d3d5e84 Copyright (c) 2000-2012 the FFmpeg developers
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - major_brand     : isom
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - minor_version   : 512
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - compatible_brands: mp41
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - encoder         : VisualHub 1.28
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - handler_name    : VideoHandler
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - handler_name    :
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - Incompatible pixel format 'yuv420p' for codec 'mjpeg', auto-selecting format 'yuvj420p'
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - [buffer @ 0x7ffae8432f40] w:854 h:480 pixfmt:yuv420p tb:1/1000000 sar:1/1 sws_param:flags=2
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - [scale @ 0x7ffae8433a00] w:854 h:480 fmt:yuv420p sar:1/1 -> w:160 h:90 fmt:yuvj420p sar:1281/1280 flags:0x4
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - major_brand     : isom
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - minor_version   : 512
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - compatible_brands: mp41
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - encoder         : Lavf54.3.100
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:53:44  INFO (FFmpegEncoderEngine:174) - handler_name    : VideoHandler
+2012-06-22 12:53:44  INFO (AbstractCmdlineEncoderEngine:257) - Video track videolong.mp4 successfully encoded using profile 'search-cover.http'
+2012-06-22 12:53:44  INFO (ComposerServiceImpl:862) - Deleted local copy of image file at /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/23a0c0b0-fa65-44f8-9849-60343dbe429b/track-b9ee2a2d-ef2f-4603-aea6-d6600093cdd0/videolong_1_f9f8996c-dfba-488d-8e32-75a50c5ca9fd-search.jpg
+2012-06-22 12:53:54  INFO (ComposeWorkflowOperationHandler:193) - Encoding track http://localhost:8080/files/mediapackage/23a0c0b0-fa65-44f8-9849-60343dbe429b/track-b9ee2a2d-ef2f-4603-aea6-d6600093cdd0/videolong.mp4 using encoding profile 'youtube-med.http'
+2012-06-22 12:53:59  INFO (ComposerServiceImpl:203) - Encoding video track track-3 to 49a55fd0-efbd-4476-9905-8543b190b4dc using profile 'youtube-med.http'
+2012-06-22 12:53:59  INFO (AbstractCmdlineEncoderEngine:233) - Executing encoding command: ffmpeg -i /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/23a0c0b0-fa65-44f8-9849-60343dbe429b/track-b9ee2a2d-ef2f-4603-aea6-d6600093cdd0/videolong.mp4 -acodec libmp3lame -ab 64k -ar 22050 -r 25 -vcodec libx264 -vpre default -level 41 -crf 20 -bufsize 20000k -maxrate 25000k -g 250 -s 852x480 -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -subq 7 -me_range 16 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -rc_eq 'blurCplx^(1-qComp)' -bf 16 -b_strategy 1 -bidir_refine 1 -refs 6 /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/23a0c0b0-fa65-44f8-9849-60343dbe429b/track-b9ee2a2d-ef2f-4603-aea6-d6600093cdd0/videolong_7062914c-f53e-4e06-b942-392f3f745c9d-yt-med.mp4 
+2012-06-22 12:53:59  INFO (FFmpegEncoderEngine:174) - ffmpeg version 0.10.2.git-d3d5e84 Copyright (c) 2000-2012 the FFmpeg developers
+2012-06-22 12:53:59  INFO (FFmpegEncoderEngine:174) - major_brand     : isom
+2012-06-22 12:53:59  INFO (FFmpegEncoderEngine:174) - minor_version   : 512
+2012-06-22 12:53:59  INFO (FFmpegEncoderEngine:174) - compatible_brands: mp41
+2012-06-22 12:53:59  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:53:59  INFO (FFmpegEncoderEngine:174) - encoder         : VisualHub 1.28
+2012-06-22 12:53:59  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:53:59  INFO (FFmpegEncoderEngine:174) - handler_name    : VideoHandler
+2012-06-22 12:53:59  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:53:59  INFO (FFmpegEncoderEngine:174) - handler_name    :
+2012-06-22 12:53:59  INFO (FFmpegEncoderEngine:174) - File for preset 'default' not found
+2012-06-22 12:53:59  WARN (AbstractCmdlineEncoderEngine:269) - Error while encoding video track videolong.mp4 using 'youtube-med.http': Encoder exited abnormally with status 1
+2012-06-22 12:53:59  WARN (ComposerServiceImpl:249) - Error encoding http://localhost:8080/files/mediapackage/23a0c0b0-fa65-44f8-9849-60343dbe429b/track-b9ee2a2d-ef2f-4603-aea6-d6600093cdd0/videolong.mp4 and null
+org.opencastproject.composer.api.EncoderException: Encoder exited abnormally with status 1
+	at org.opencastproject.composer.impl.AbstractCmdlineEncoderEngine.process(AbstractCmdlineEncoderEngine.java:249)
+	at org.opencastproject.composer.impl.AbstractCmdlineEncoderEngine.mux(AbstractCmdlineEncoderEngine.java:121)
+	at org.opencastproject.composer.impl.ComposerServiceImpl.encode(ComposerServiceImpl.java:210)
+	at org.opencastproject.composer.impl.ComposerServiceImpl.process(ComposerServiceImpl.java:911)
+	at org.opencastproject.job.api.AbstractJobProducer$JobRunner.call(AbstractJobProducer.java:192)
+	at org.opencastproject.job.api.AbstractJobProducer$JobRunner.call(AbstractJobProducer.java:157)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+2012-06-22 12:53:59  INFO (ServiceRegistryJpaImpl:1698) - State set to WARNING for current service org.opencastproject.composer on host http://localhost:8080
+2012-06-22 12:54:04 ERROR (WorkflowOperationWorker:161) - Workflow operation 'compose' failed
+org.opencastproject.workflow.api.WorkflowOperationException: Encoding failed
+	at org.opencastproject.workflow.handler.ComposeWorkflowOperationHandler.encode(ComposeWorkflowOperationHandler.java:198)
+	at org.opencastproject.workflow.handler.ComposeWorkflowOperationHandler.start(ComposeWorkflowOperationHandler.java:115)
+	at org.opencastproject.workflow.impl.WorkflowOperationWorker.start(WorkflowOperationWorker.java:220)
+	at org.opencastproject.workflow.impl.WorkflowOperationWorker.execute(WorkflowOperationWorker.java:141)
+	at org.opencastproject.workflow.impl.WorkflowServiceImpl.runWorkflowOperation(WorkflowServiceImpl.java:715)
+	at org.opencastproject.workflow.impl.WorkflowServiceImpl.process(WorkflowServiceImpl.java:1539)
+	at org.opencastproject.workflow.impl.WorkflowServiceImpl$JobRunner.call(WorkflowServiceImpl.java:1851)
+	at org.opencastproject.workflow.impl.WorkflowServiceImpl$JobRunner.call(WorkflowServiceImpl.java:1817)
+	at java.util.concurrent.FutureTask$Sync.innerRun(FutureTask.java:303)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:138)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(ThreadPoolExecutor.java:886)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:908)
+	at java.lang.Thread.run(Thread.java:680)
+2012-06-22 12:54:14  INFO (ZipWorkflowOperationHandler:158) - Archiving mediapackage 23a0c0b0-fa65-44f8-9849-60343dbe429b in workflow Workflow {29}
+2012-06-22 12:54:14  INFO (ZipWorkflowOperationHandler:176) - Adding zipped mediapackage 23a0c0b0-fa65-44f8-9849-60343dbe429b to the failed.zips archive
+2012-06-22 12:54:15  INFO (ZipWorkflowOperationHandler:190) - Zipped mediapackage 23a0c0b0-fa65-44f8-9849-60343dbe429b moved to the failed.zips archive
+2012-06-22 12:55:18  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.annotation@http://localhost:8080
+2012-06-22 12:55:23  INFO (Activator:38) - Stopped admin ui
+2012-06-22 12:55:23  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.distribution.acl@http://localhost:8080
+2012-06-22 12:55:23  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.textanalyzer@http://localhost:8080
+2012-06-22 12:55:23  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.search@http://localhost:8080
+2012-06-22 12:55:23  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.usertracking@http://localhost:8080
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'history_video' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'business_video' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'science_audio' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'aggregated' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'teaching_education_audio' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'engineering_audio' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'history_audio' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'fine_arts_audio' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'social_science_video' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'series' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'custom' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'language_audio' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'literature_audio' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'society_video' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'business_audio' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'social_science_audio' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'event_audio' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'search' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'society_audio' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'language_video' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'humanities_audio' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'science_video' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'event_video' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'humanities_video' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'engineering_video' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'latest' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'series_audio' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'literature_video' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'health_medicine_audio' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'teaching_education_video' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'health_medicine_video' feed
+2012-06-22 12:55:23  INFO (FeedServlet:223) - Removing 'fine_arts_video' feed
+2012-06-22 12:55:23  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.distribution.streaming@http://localhost:8080
+2012-06-22 12:55:23  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.videosegmenter@http://localhost:8080
+2012-06-22 12:55:23  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.composer@http://localhost:8080
+2012-06-22 12:55:23  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.inspection@http://localhost:8080
+2012-06-22 12:55:23  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.workflow@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.episode@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.distribution.youtube@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.ingest@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.scheduler@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.distribution.download@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.caption@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.series@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.fileupload@http://localhost:8080
+2012-06-22 12:55:24  INFO (FileUploadRestService:92) - File Upload REST Endpoint deactivated
+2012-06-22 12:55:24  INFO (FileUploadServiceImpl:89) - File Upload Service deactivated
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.files@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.serviceregistry@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.info@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.capture.admin@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.organization@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.userdirectory.roles@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.users.jpa@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.manipulator@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.annotation@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.caption@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.capture.admin@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.composer@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.distribution.acl@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.distribution.download@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.distribution.streaming@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.distribution.youtube@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.episode@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.files@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.fileupload@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.info@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.ingest@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.inspection@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.manipulator@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.organization@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.scheduler@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.search@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.series@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.serviceregistry@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.textanalyzer@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.userdirectory.roles@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.users.jpa@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.usertracking@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.videosegmenter@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:891) - Unregistering Service org.opencastproject.workflow@http://localhost:8080
+2012-06-22 12:55:24  INFO (ServiceRegistryJpaImpl:771) - Unregistering http://localhost:8080
+2012-06-22 12:56:03  INFO (OrganizationDirectoryServiceImpl:262) - Registering organization 'mh_default_org'
+2012-06-22 12:56:04  INFO (RestPublisher:222) - Registered REST endpoint at /org
+2012-06-22 12:56:04  INFO (RestPublisher:222) - Registered REST endpoint at /capture-admin
+2012-06-22 12:56:04  INFO (SmtpService:124) - Mail transport protocol is 'smtp'
+2012-06-22 12:56:04  INFO (SmtpService:195) - Mail service configured with localhost
+2012-06-22 12:56:04  INFO (SmtpService:199) - mail.smtp.port: 25
+2012-06-22 12:56:04  INFO (SmtpService:199) - mail.from: matterhorn@localhost
+2012-06-22 12:56:04  INFO (SmtpService:199) - mail.transport.protocol: smtp
+2012-06-22 12:56:04  INFO (SmtpService:199) - mail.smtp.host: localhost
+2012-06-22 12:56:04  INFO (SmtpService:199) - mail.smtp.auth: false
+2012-06-22 12:56:04  INFO (RestPublisher:222) - Registered REST endpoint at /roles
+2012-06-22 12:56:04  INFO (StaticResourceServlet:79) - serving static files from '/Users/phuongdh/Documents/hydrant-felix/work/content/downloads'
+2012-06-22 12:56:05  INFO (RestPublisher:222) - Registered REST endpoint at /mediapackage
+2012-06-22 12:56:05  INFO (SpringSecurityConfigurationArtifactInstaller:115) - registered OsgiBundleXmlApplicationContext(bundle=matterhorn-kernel, config=file:/Users/phuongdh/Documents/hydrant-felix/etc/security/mh_default_org.xml): startup date [Wed Dec 31 19:00:00 EST 1969]; root of context hierarchy for mh_default_org
+2012-06-22 12:56:05  INFO (CaptionUploadWorkflowOperationHandler:65) - Registering caption upload hold state ui from classpath /ui/operation/caption/index.html
+2012-06-22 12:56:05  INFO (DownloadDVDWorkflowOperationHandler:66) - Registering download-DVD hold state ui from classpath /ui/operation/download-dvd/index.html
+2012-06-22 12:56:05  INFO (ErrorResolutionWorkflowOperationHandler:51) - Registering retry strategy failover hold state ui from classpath /ui/operation/retry-strategy/index.html
+2012-06-22 12:56:05  INFO (ReviewWorkflowOperationHandler:67) - Registering review hold state ui from classpath /ui/operation/review/index.html
+2012-06-22 12:56:06  INFO (RestPublisher:222) - Registered REST endpoint at /info
+2012-06-22 12:56:06  INFO (RestPublisher:222) - Registered REST endpoint at /users
+2012-06-22 12:56:06  INFO (ServiceRegistryJpaImpl:734) - Registering http://localhost:8080 with a maximum load of 4
+2012-06-22 12:56:07  INFO (RestPublisher:222) - Registered REST endpoint at /caption
+2012-06-22 12:56:07  INFO (WorkingFileRepositoryImpl:121) - Usable space 321 Gb out of 464 Gb (69%)
+2012-06-22 12:56:07  INFO (RestPublisher:222) - Registered REST endpoint at /files
+2012-06-22 12:56:07  INFO (WorkspaceImpl:439) - Mapping workspace to working file repository using /Users/phuongdh/Documents/hydrant-felix/work/content/files
+2012-06-22 12:56:07  INFO (WorkspaceImpl:105) - CONFIG org.opencastproject.workspace.rootdir: /Users/phuongdh/Documents/hydrant-felix/work/content/workspace
+2012-06-22 12:56:07  INFO (WorkspaceImpl:150) - Hard links between the working file repository and the workspace enabled
+2012-06-22 12:56:07  INFO (DownloadDistributionService:115) - Download distribution directory is /Users/phuongdh/Documents/hydrant-felix/work/content/downloads
+2012-06-22 12:56:07  INFO (RestPublisher:222) - Registered REST endpoint at /distribution/download
+2012-06-22 12:56:08  INFO (SeriesServiceDatabaseImpl:86) - Activating persistence manager for series
+2012-06-22 12:56:08  INFO (SeriesServiceImpl:119) - Activating Series Service
+2012-06-22 12:56:08  INFO (RestPublisher:222) - Registered REST endpoint at /series
+2012-06-22 12:56:08  INFO (SchedulerServiceDatabaseImpl:71) - Activating persistence manager for scheduler
+2012-06-22 12:56:08  INFO (FileUploadServiceImpl:85) - File Upload Service activated. Storage directory is /Users/phuongdh/Documents/hydrant-felix/work/content/fileupload-tmp
+2012-06-22 12:56:08  INFO (FileUploadRestService:88) - File Upload REST Endpoint activated
+2012-06-22 12:56:08  INFO (RestPublisher:222) - Registered REST endpoint at /upload
+2012-06-22 12:56:09  INFO (IngestServiceImpl:156) - Ingest Service started.
+2012-06-22 12:56:09  INFO (RestPublisher:222) - Registered REST endpoint at /ingest
+2012-06-22 12:56:09  INFO (WorkflowRestService:155) - configured server url is http://localhost:8080
+2012-06-22 12:56:09  INFO (InboxScannerService:148) - Now watching inbox /Users/phuongdh/Documents/hydrant-felix/inbox
+2012-06-22 12:56:09  INFO (RestPublisher:222) - Registered REST endpoint at /workflow
+2012-06-22 12:56:09  INFO (SchedulerServiceImpl:166) - Activating Scheduler Service
+2012-06-22 12:56:09  INFO (RestPublisher:222) - Registered REST endpoint at /recordings
+2012-06-22 12:56:09  INFO (CaptureAgentStateServiceImpl:131) - CaptureAgentStateServiceImpl starting.
+2012-06-22 12:56:09  WARN (AgentImpl:278) - Null friendly name list for agent demo_capture_agent.  Capabilities filtering aborted.
+2012-06-22 12:56:09  INFO (CaptureAgentStateServiceImpl:651) - Roles 'ROLE_INSTRUCTOR, ROLE_ADMIN' may schedule 'demo_capture_agent'
+2012-06-22 12:56:09  WARN (AgentImpl:278) - Null friendly name list for agent demo_capture_agent.  Capabilities filtering aborted.
+2012-06-22 12:56:09  WARN (AgentImpl:278) - Null friendly name list for agent demo_capture_agent.  Capabilities filtering aborted.
+2012-06-22 12:56:09  INFO (ServiceRegistryJpaImpl:415) - Set max attempts before error state to 1
+2012-06-22 12:56:09  INFO (YoutubeDistributionService:154) - Update method from managed service
+2012-06-22 12:56:09  INFO (RestPublisher:222) - Registered REST endpoint at /youtube
+2012-06-22 12:56:09  INFO (EpisodeServiceImpl:275) - Setting up solr search index at /Users/phuongdh/Documents/hydrant-felix/work/content/archive
+2012-06-22 12:56:09  INFO (EpisodeServiceImpl:280) - solr search index found at /Users/phuongdh/Documents/hydrant-felix/work/content/archive/conf
+2012-06-22 12:56:10  INFO (RestPublisher:222) - Registered REST endpoint at /episode
+2012-06-22 12:56:10  INFO (RestPublisher:222) - Registered REST endpoint at /services
+2012-06-22 12:56:10  INFO (UserAndSeriesLoader$Loader:128) - Adding sample series...
+2012-06-22 12:56:10  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:56:10  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:56:10  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:56:10  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:56:10  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:56:10  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:56:10  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:56:10  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:56:10  INFO (RestPublisher:222) - Registered REST endpoint at /composer/ffmpeg
+2012-06-22 12:56:10  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:56:10  WARN (UserAndSeriesLoader$Loader:174) - Unable to find series dublin core
+2012-06-22 12:56:10  INFO (UserAndSeriesLoader:210) - Adding sample students, usernames and passwords are student1/student1... student200/student200
+2012-06-22 12:56:10  INFO (TrimWorkflowOperationHandler:91) - Registering review / trim hold state ui from classpath /ui/operation/trim/index.html
+2012-06-22 12:56:11  INFO (RestPublisher:222) - Registered REST endpoint at /analysis/videosegmenter
+2012-06-22 12:56:11  INFO (RestPublisher:222) - Registered REST endpoint at /inspection
+2012-06-22 12:56:11  WARN (StreamingDistributionService:106) - Stream url was not set (org.opencastproject.streaming.url)
+2012-06-22 12:56:11  WARN (StreamingDistributionService:113) - Streaming distribution directory must be set (org.opencastproject.streaming.directory)
+2012-06-22 12:56:11  INFO (StreamingDistributionService:125) - Streaming distribution directory is null
+2012-06-22 12:56:11  INFO (RestPublisher:222) - Registered REST endpoint at /distribution/streaming
+2012-06-22 12:56:11  INFO (SearchServiceDatabaseImpl:77) - Activating persistence manager for search service
+2012-06-22 12:56:11  INFO (SearchServiceImpl:251) - Setting up solr search index at /Users/phuongdh/Documents/hydrant-felix/work/content/searchindex
+2012-06-22 12:56:11  INFO (SearchServiceImpl:256) - solr search index found at /Users/phuongdh/Documents/hydrant-felix/work/content/searchindex/conf
+2012-06-22 12:56:11  INFO (SearchServiceImpl:482) - Finished populating search index
+2012-06-22 12:56:11  INFO (RestPublisher:222) - Registered REST endpoint at /search
+2012-06-22 12:56:11  INFO (UserTrackingRestService:112) - configured server url is http://localhost:8080
+2012-06-22 12:56:11  INFO (UserAndSeriesLoader:210) - Adding sample students, usernames and passwords are student1/student1... student200/student200
+2012-06-22 12:56:11  INFO (RestPublisher:222) - Registered REST endpoint at /usertracking
+2012-06-22 12:56:12  INFO (RestPublisher:222) - Registered REST endpoint at /analysis/text
+2012-06-22 12:56:12  INFO (AclDistributionService:117) - Download distribution directory is /Users/phuongdh/Documents/hydrant-felix/work/content/downloads
+2012-06-22 12:56:12  INFO (UserAndSeriesLoader:210) - Adding sample instructors, usernames and passwords are instructor1/instructor1... instructor20/instructor20
+2012-06-22 12:56:12  INFO (UserAndSeriesLoader:210) - Adding sample instructors, usernames and passwords are instructor1/instructor1... instructor20/instructor20
+2012-06-22 12:56:12  INFO (RestPublisher:222) - Registered REST endpoint at /distribution/acl
+2012-06-22 12:56:12  INFO (Activator:33) - Starting admin ui
+2012-06-22 12:56:12  INFO (UserAndSeriesLoader:210) - Adding sample admins, usernames and passwords are admin1/admin1... admin10/admin10
+2012-06-22 12:56:12  INFO (UserAndSeriesLoader:210) - Adding sample admins, usernames and passwords are admin1/admin1... admin10/admin10
+2012-06-22 12:56:12  INFO (UserAndSeriesLoader$Loader:190) - Finished loading sample series and users
+2012-06-22 12:56:12  INFO (AnnotationRestService:96) - configured server url is http://localhost:8080
+2012-06-22 12:56:12  INFO (RestPublisher:222) - Registered REST endpoint at /annotation
+2012-06-22 12:56:21  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/export.xml
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/business_audio.properties
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/other-movies.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'business_audio' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/teaching_education_audio.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'teaching_education_audio' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/series.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'series' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/literature_audio.properties
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile dvd-ntsc.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile dvd-pal.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/feed-images.properties
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile feed-cover.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/feed-movies.properties
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile feed-m4a.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile feed-avi.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/matterhorn-movies.properties
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile audio-only.work
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile video-only.work
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile trim.work
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile video-segmentation.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile mux-av.work
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile av.work
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/youtube-movies.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'literature_audio' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/search.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'search' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/subject_audio.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'event_audio' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/history_video.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'history_video' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/social_science_video.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'social_science_video' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/health_medicine_audio.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'health_medicine_audio' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/language_video.properties
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile youtube-med.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile youtube-vga-med.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile youtube-high.http
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'language_video' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/teaching_education_video.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'teaching_education_video' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/fine_arts_audio.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'fine_arts_audio' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/fine_arts_video.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'fine_arts_video' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/latest.properties
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile youtube-vga-hd.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile youtube-hd.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile youtube-vga-high.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/engage-movies.properties
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile flash-preview.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile flash-audio.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile flash-vga.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile flash.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/engage-movies-multi-quality.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'latest' feed
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile flash-high.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile flash-vga-medium.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile flash-vga-low.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile flash-vga-hd.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile flash-hd.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile flash-medium.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile flash-low.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile flash-vga-high.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/epiphan-split.properties
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile epiphan.presenter
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile epiphan.presentation
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/matterhorn-branding.properties
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile watermark.branding
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile credits.branding
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile copy.branding
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile prepare-cat.branding
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/matterhorn-images.properties
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile image-conversion.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile text-analysis.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/engage-images.properties
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile search-cover.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile player-preview.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile player-slides.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:243) - Registering encoding profiles from /Users/phuongdh/Documents/hydrant-felix/etc/encoding/itunes-movies.properties
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile itunes.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile itunes-audio.http
+2012-06-22 12:56:21  INFO (EncodingProfileScanner:247) - Installed profile itunes-vga.http
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/business_video.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'business_video' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/society_video.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'society_video' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/social_science_audio.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'social_science_audio' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/literature_video.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'literature_video' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/history_audio.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'history_audio' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/subject_video.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'event_video' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/humanities_audio.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'humanities_audio' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/health_medicine_video.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'health_medicine_video' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/science_audio.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'science_audio' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/custom.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'custom' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/series_audio.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'series_audio' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/science_video.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'science_video' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/engineering_video.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'engineering_video' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/engineering_audio.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'engineering_audio' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/language_audio.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'language_audio' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/aggregation.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'aggregated' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/society_audio.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'society_audio' feed
+2012-06-22 12:56:21  INFO (FeedRegistrationScanner:94) - Installing a feed from /Users/phuongdh/Documents/hydrant-felix/etc/feeds/humanities_video.properties
+2012-06-22 12:56:21  INFO (FeedServlet:212) - Registering 'humanities_video' feed
+2012-06-22 12:56:21  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/watermark.xml
+2012-06-22 12:56:21  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/multi-quality.xml
+2012-06-22 12:56:21  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/compose-distribute-publish.xml
+2012-06-22 12:56:21  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/default-error-handler.xml
+2012-06-22 12:56:21  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/default.xml
+2012-06-22 12:56:21  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/passthrough.xml
+2012-06-22 12:56:21  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/email-error-handler.xml
+2012-06-22 12:56:21  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/create-dvd.xml
+2012-06-22 12:56:21  INFO (WorkflowDefinitionScanner:55) - Installing workflow from file /Users/phuongdh/Documents/hydrant-felix/etc/workflows/retract.xml
+2012-06-22 12:56:57  INFO (IngestServiceImpl:829) - Adding element of type Catalog to mediapackage a6c13c9b-9271-4adc-8440-d3949ed26c98
+2012-06-22 12:56:57  INFO (FileUploadServiceImpl:105) - Creating new upload job: FileUploadJob(id=3cd21e56-1557-4bff-96c2-2a3b23a54f8e, filename=videolong.mp4)
+2012-06-22 12:56:58  INFO (FileUploadServiceImpl:414) - Moving payload of job 3cd21e56-1557-4bff-96c2-2a3b23a54f8e to MediaPackage a6c13c9b-9271-4adc-8440-d3949ed26c98
+2012-06-22 12:56:58  INFO (FileUploadServiceImpl:304) - Upload job completed: FileUploadJob(id=3cd21e56-1557-4bff-96c2-2a3b23a54f8e, filename=videolong.mp4)
+2012-06-22 12:57:10  INFO (InspectWorkflowOperationHandler:128) - Inspecting track 'track-1' of a6c13c9b-9271-4adc-8440-d3949ed26c98
+2012-06-22 12:57:15  INFO (MediaInspectionServiceImpl:426) - Successfully inspected track http://localhost:8080/files/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/track-3cd21e56-1557-4bff-96c2-2a3b23a54f8e/videolong.mp4
+2012-06-22 12:57:25  INFO (ComposeWorkflowOperationHandler:166) - Skipping encoding of media package to 'epiphan.presenter': no suitable input tracks found
+2012-06-22 12:57:30  INFO (ComposeWorkflowOperationHandler:166) - Skipping encoding of media package to 'epiphan.presentation': no suitable input tracks found
+2012-06-22 12:57:40  INFO (PrepareAVWorkflowOperationHandler:196) - No audio/video tracks with flavor 'presentation/source' found to prepare
+2012-06-22 12:58:00  INFO (ComposerServiceImpl:485) - creating an image using video track track-3
+2012-06-22 12:58:00  INFO (AbstractCmdlineEncoderEngine:233) - Executing encoding command: ffmpeg -strict unofficial -y -i /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/track-3cd21e56-1557-4bff-96c2-2a3b23a54f8e/videolong.mp4 -ss 1 -r 1 -vframes 1 -vf scale=-1:480 -f image2 /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/track-3cd21e56-1557-4bff-96c2-2a3b23a54f8e/videolong_1_4847529a-ad40-41ab-bf7a-f7ec7e2e10c2-player.jpg 
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - ffmpeg version 0.10.2.git-d3d5e84 Copyright (c) 2000-2012 the FFmpeg developers
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - major_brand     : isom
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - minor_version   : 512
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - compatible_brands: mp41
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - encoder         : VisualHub 1.28
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - handler_name    : VideoHandler
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - handler_name    :
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - Incompatible pixel format 'yuv420p' for codec 'mjpeg', auto-selecting format 'yuvj420p'
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - [buffer @ 0x7fe073c32e80] w:854 h:480 pixfmt:yuv420p tb:1/1000000 sar:1/1 sws_param:flags=2
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - [scale @ 0x7fe073c334a0] w:854 h:480 fmt:yuv420p sar:1/1 -> w:854 h:480 fmt:yuvj420p sar:1/1 flags:0x4
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - major_brand     : isom
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - minor_version   : 512
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - compatible_brands: mp41
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - encoder         : Lavf54.3.100
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:00  INFO (FFmpegEncoderEngine:174) - handler_name    : VideoHandler
+2012-06-22 12:58:00  INFO (AbstractCmdlineEncoderEngine:257) - Video track videolong.mp4 successfully encoded using profile 'player-preview.http'
+2012-06-22 12:58:00  INFO (ComposerServiceImpl:862) - Deleted local copy of image file at /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/track-3cd21e56-1557-4bff-96c2-2a3b23a54f8e/videolong_1_4847529a-ad40-41ab-bf7a-f7ec7e2e10c2-player.jpg
+2012-06-22 12:58:00  INFO (ServiceRegistryJpaImpl:1720) - State reset to NORMAL for current service org.opencastproject.composer on host http://localhost:8080
+2012-06-22 12:58:15  INFO (ComposerServiceImpl:485) - creating an image using video track track-3
+2012-06-22 12:58:15  INFO (AbstractCmdlineEncoderEngine:233) - Executing encoding command: ffmpeg -strict unofficial -y -i /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/track-3cd21e56-1557-4bff-96c2-2a3b23a54f8e/videolong.mp4 -ss 1 -r 1 -vframes 1 -vf scale=160:-1 -f image2 /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/track-3cd21e56-1557-4bff-96c2-2a3b23a54f8e/videolong_1_5e9a44a5-853d-444e-bb3f-cadedb50119d-search.jpg 
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - ffmpeg version 0.10.2.git-d3d5e84 Copyright (c) 2000-2012 the FFmpeg developers
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - major_brand     : isom
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - minor_version   : 512
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - compatible_brands: mp41
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - encoder         : VisualHub 1.28
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - handler_name    : VideoHandler
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - handler_name    :
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - Incompatible pixel format 'yuv420p' for codec 'mjpeg', auto-selecting format 'yuvj420p'
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - [buffer @ 0x7fcb52c32f60] w:854 h:480 pixfmt:yuv420p tb:1/1000000 sar:1/1 sws_param:flags=2
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - [scale @ 0x7fcb52c33a20] w:854 h:480 fmt:yuv420p sar:1/1 -> w:160 h:90 fmt:yuvj420p sar:1281/1280 flags:0x4
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - major_brand     : isom
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - minor_version   : 512
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - compatible_brands: mp41
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - encoder         : Lavf54.3.100
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:15  INFO (FFmpegEncoderEngine:174) - handler_name    : VideoHandler
+2012-06-22 12:58:15  INFO (AbstractCmdlineEncoderEngine:257) - Video track videolong.mp4 successfully encoded using profile 'search-cover.http'
+2012-06-22 12:58:15  INFO (ComposerServiceImpl:862) - Deleted local copy of image file at /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/track-3cd21e56-1557-4bff-96c2-2a3b23a54f8e/videolong_1_5e9a44a5-853d-444e-bb3f-cadedb50119d-search.jpg
+2012-06-22 12:58:25  INFO (ComposeWorkflowOperationHandler:193) - Encoding track http://localhost:8080/files/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/track-3cd21e56-1557-4bff-96c2-2a3b23a54f8e/videolong.mp4 using encoding profile 'youtube-med.http'
+2012-06-22 12:58:30  INFO (ComposerServiceImpl:203) - Encoding video track track-3 to 130f804a-a796-4e9e-9423-e49362e1ab34 using profile 'youtube-med.http'
+2012-06-22 12:58:30  INFO (AbstractCmdlineEncoderEngine:233) - Executing encoding command: ffmpeg -i /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/track-3cd21e56-1557-4bff-96c2-2a3b23a54f8e/videolong.mp4 -acodec libmp3lame -ab 64k -ar 22050 -r 25 -vcodec libx264 -vpre default -level 41 -crf 20 -bufsize 20000k -maxrate 25000k -g 250 -s 852x480 -coder 1 -flags +loop -cmp +chroma -partitions +parti4x4+partp8x8+partb8x8 -subq 7 -me_range 16 -keyint_min 25 -sc_threshold 40 -i_qfactor 0.71 -rc_eq 'blurCplx^(1-qComp)' -bf 16 -b_strategy 1 -bidir_refine 1 -refs 6 /Users/phuongdh/Documents/hydrant-felix/work/content/workspace/mediapackage/a6c13c9b-9271-4adc-8440-d3949ed26c98/track-3cd21e56-1557-4bff-96c2-2a3b23a54f8e/videolong_e9ab09ce-8e60-430d-baee-37e8eedf196d-yt-med.mp4 
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - ffmpeg version 0.10.2.git-d3d5e84 Copyright (c) 2000-2012 the FFmpeg developers
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - major_brand     : isom
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - minor_version   : 512
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - compatible_brands: mp41
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - encoder         : VisualHub 1.28
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - handler_name    : VideoHandler
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - handler_name    :
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - [buffer @ 0x7fcbd14336a0] w:854 h:480 pixfmt:yuv420p tb:1/1000000 sar:1/1 sws_param:flags=2
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - [scale @ 0x7fcbd1433f80] w:854 h:480 fmt:yuv420p sar:1/1 -> w:852 h:480 fmt:yuv420p sar:427/426 flags:0x4
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] using SAR=427/426
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] using cpu capabilities: none!
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] profile High, level 4.1
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - [libx264 @ 0x7fcbd188ac00] 264 - core 119 - H.264/MPEG-4 AVC codec - Copyleft 2003-2011 - http://www.videolan.org/x264.html - options: cabac=1 ref=6 deblock=1:0:0 analyse=0x3:0x111 me=hex subme=7 psy=1 psy_rd=1.00:0.00 mixed_ref=1 me_range=16 chroma_me=1 trellis=1 8x8dct=1 cqm=0 deadzone=21,11 fast_pskip=1 chroma_qp_offset=-2 threads=6 sliced_threads=0 nr=0 decimate=1 interlaced=0 bluray_compat=0 constrained_intra=0 bframes=16 b_pyramid=2 b_adapt=1 b_bias=0 direct=1 weightb=1 open_gop=0 weightp=2 keyint=250 keyint_min=25 scenecut=40 intra_refresh=0 rc_lookahead=40 rc=crf mbtree=1 crf=20.0 qcomp=0.60 qpmin=10 qpmax=51 qpstep=4 vbv_maxrate=25000 vbv_bufsize=20000 crf_max=0.0 nal_hrd=none ip_ratio=1.40 aq=1:1.00
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - major_brand     : isom
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - minor_version   : 512
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - compatible_brands: mp41
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - encoder         : Lavf54.3.100
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - handler_name    : VideoHandler
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - creation_time   : 1970-01-01 00:00:00
+2012-06-22 12:58:30  INFO (FFmpegEncoderEngine:174) - handler_name    :
