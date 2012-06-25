@@ -450,6 +450,19 @@
       </configurations>
     </operation>
 
+    <operation
+      id="distribute-hydrant"
+      max-attempts="2"
+      fail-on-error="true"
+      if="${org.opencastproject.hydrant.url}"
+      exception-handler-workflow="error"
+      description="Distributing to Hydrant">
+      <configurations>
+        <configuration key="source-tags">streaming,-audio</configuration>
+        <configuration key="target-tags">hydrant</configuration>
+      </configurations>
+    </operation>
+
     <!-- Archive the current state of the mediapackage -->
 
     <operation
