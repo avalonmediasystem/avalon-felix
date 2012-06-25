@@ -458,7 +458,7 @@
       exception-handler-workflow="error"
       description="Distributing to Hydrant">
       <configurations>
-        <configuration key="source-tags">streaming,-audio</configuration>
+        <configuration key="source-tags">streaming</configuration>
         <configuration key="target-tags">hydrant</configuration>
       </configurations>
     </operation>
