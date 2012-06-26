@@ -446,7 +446,7 @@
       description="Distributing to streaming server">
       <configurations>
         <configuration key="source-tags">engage,-publish</configuration>
-        <configuration key="target-tags">publish</configuration>
+        <configuration key="target-tags">streaming,publish</configuration>
       </configurations>
     </operation>
 
