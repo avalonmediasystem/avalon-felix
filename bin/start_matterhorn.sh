@@ -60,7 +60,7 @@ UTIL_LOGGING_OPTS="-Djava.util.logging.config.file=$FELIX_CONFIG_DIR/services/ja
 LOG_OPTS="$PAX_LOGGING_OPTS $MATTERHORN_LOGGING_OPTS $ECLIPSELINK_LOGGING_OPTS $UTIL_LOGGING_OPTS"
 
 GRAPHICS_OPTS="-Djava.awt.headless=true -Dawt.toolkit=sun.awt.HeadlessToolkit"
-JAVA_OPTS="-Xms1024m -Xmx1024m -XX:MaxPermSize=256m"
+JAVA_OPTS="-Xms1024m -Xmx1024m -XX:MaxPermSize=256m -Dgosh.args=--nointeractive"
 
 #!/bin/sh
 # If this computer is OS X and $DYLD_FALLBACK_LIBRARY_PATH environment variable
