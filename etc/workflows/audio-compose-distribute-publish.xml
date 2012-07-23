@@ -473,7 +473,6 @@
     </operation>
  
     <!-- Publish to engage search index -->
-<!-- 
     <operation
       id="publish"
       fail-on-error="true"
@@ -483,7 +482,7 @@
         <configuration key="source-tags">publish</configuration>
       </configurations>
     </operation>
--->
+
     <!-- Cleanup the working file repository -->
  
     <operation
