@@ -99,7 +99,7 @@
       </configurations>
     </operation>
 
-    <operation
+    <!-- <operation
       id="compose"
       fail-on-error="false"
       exception-handler-workflow="error"
@@ -109,7 +109,7 @@
         <configuration key="target-flavor">presentation/source</configuration>
         <configuration key="encoding-profile">epiphan.presentation</configuration>
       </configurations>
-    </operation>
+    </operation> -->
 
     <!-- End Epiphan MCA operations -->
 
@@ -126,7 +126,7 @@
       </configurations>
     </operation>
 
-    <operation
+    <!-- <operation
       id="prepare-av"
       fail-on-error="true"
       exception-handler-workflow="error"
@@ -137,7 +137,7 @@
         <configuration key="rewrite">false</configuration>
         <configuration key="promiscuous-audio-muxing">true</configuration>
       </configurations>
-    </operation>
+    </operation> -->
 
     <!-- encode to hold preview player formats -->
 
@@ -154,7 +154,7 @@
       </configurations>
     </operation>
 
-    <operation
+    <!-- <operation
       id="compose"
       if="${trimHold}"
       fail-on-error="true"
@@ -165,7 +165,7 @@
         <configuration key="target-flavor">presentation/preview</configuration>
         <configuration key="encoding-profile">flash-preview.http</configuration>
       </configurations>
-    </operation>
+    </operation> -->
 
     <!-- hold to trim media-->
    
@@ -198,7 +198,7 @@
         <configuration key="time">1</configuration>
       </configurations>
     </operation>
-    <operation
+    <!-- <operation
       id="image"
       fail-on-error="true"
       exception-handler-workflow="error"
@@ -211,7 +211,7 @@
         <configuration key="encoding-profile">player-preview.http</configuration>
         <configuration key="time">1</configuration>
       </configurations>
-    </operation>
+    </operation> -->
 
     <!-- encode to engage player formats -->
 
@@ -227,7 +227,7 @@
         <configuration key="encoding-profile">flash.http</configuration>
       </configurations>
     </operation>
-    <operation
+    <!-- <operation
       id="compose"
       fail-on-error="true"
       exception-handler-workflow="error"
@@ -238,7 +238,7 @@
         <configuration key="target-tags">engage</configuration>
         <configuration key="encoding-profile">flash-vga.http</configuration>
       </configurations>
-    </operation>
+    </operation> -->
     <operation
       id="compose"
       fail-on-error="false"
@@ -255,7 +255,7 @@
 
     <!-- run the videosegmentation -->
     
-    <operation
+    <!-- <operation
       id="segment-video"
       fail-on-error="false"
       exception-handler-workflow="error"
@@ -263,7 +263,7 @@
       <configurations>
         <configuration key="source-flavor">presentation/trimmed</configuration>
       </configurations>
-    </operation>
+    </operation> -->
 
     <!-- encode to engage search result preview images -->
 
@@ -281,7 +281,7 @@
         <configuration key="time">1</configuration>
       </configurations>
     </operation>
-    <operation
+    <!-- <operation
       id="image"
       fail-on-error="true"
       exception-handler-workflow="error"
@@ -294,11 +294,11 @@
         <configuration key="encoding-profile">search-cover.http</configuration>
         <configuration key="time">1</configuration>
       </configurations>
-    </operation>
+    </operation> -->
 
     <!--  encode to feed distribution formats -->
 
-    <operation
+    <!-- <operation
       id="compose"
       fail-on-error="true"
       exception-handler-workflow="error"
@@ -309,8 +309,8 @@
         <configuration key="target-tags">rss, atom, audio</configuration>
         <configuration key="encoding-profile">feed-m4a.http</configuration>
       </configurations>
-    </operation>
-    <operation
+    </operation> -->
+    <!-- <operation
       id="compose"
       fail-on-error="true"
       exception-handler-workflow="error"
@@ -321,7 +321,7 @@
         <configuration key="target-tags">rss, atom, audio</configuration>
         <configuration key="encoding-profile">feed-m4a.http</configuration>
       </configurations>
-    </operation>
+    </operation> -->
     <operation
       id="compose"
       fail-on-error="true"
@@ -334,7 +334,7 @@
         <configuration key="encoding-profile">feed-avi.http</configuration>
       </configurations>
     </operation>
-    <operation
+    <!-- <operation
       id="compose"
       fail-on-error="true"
       exception-handler-workflow="error"
@@ -345,7 +345,7 @@
         <configuration key="target-tags">rss, atom</configuration>
         <configuration key="encoding-profile">feed-avi.http</configuration>
       </configurations>
-    </operation>
+    </operation> -->
     
     <!-- encode to feed preview images -->
 
@@ -363,7 +363,7 @@
         <configuration key="time">1</configuration>
       </configurations>
     </operation>
-    <operation
+    <!-- <operation
       id="image"
       fail-on-error="true"
       exception-handler-workflow="error"
@@ -376,11 +376,11 @@
         <configuration key="encoding-profile">feed-cover.http</configuration>
         <configuration key="time">1</configuration>
       </configurations>
-    </operation>
+    </operation> -->
 
     <!-- Generate segment previews -->
     
-    <operation
+    <!-- <operation
       id="segmentpreviews"
       fail-on-error="false"
       exception-handler-workflow="error"
@@ -394,11 +394,11 @@
         <configuration key="target-tags">engage</configuration>
         <configuration key="encoding-profile">player-slides.http</configuration>
       </configurations>
-    </operation>
+    </operation> -->
 
     <!-- Run text analysis -->
 
-    <operation
+    <!-- <operation
       id="extract-text"
       fail-on-error="false"
       exception-handler-workflow="error"
@@ -408,7 +408,7 @@
         <configuration key="source-tags"></configuration>
         <configuration key="target-tags">engage</configuration>
       </configurations>
-    </operation>
+    </operation> -->
 
     <!-- Apply ACL from series to the mediapackage -->
 
