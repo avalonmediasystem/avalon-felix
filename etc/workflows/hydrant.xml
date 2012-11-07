@@ -99,18 +99,6 @@
       </configurations>
     </operation>
 
-    <!-- <operation
-      id="compose"
-      fail-on-error="false"
-      exception-handler-workflow="error"
-      description="Splitting Media (if needed)">
-      <configurations>
-        <configuration key="source-flavor">multitrack/source</configuration>
-        <configuration key="target-flavor">presentation/source</configuration>
-        <configuration key="encoding-profile">epiphan.presentation</configuration>
-      </configurations>
-    </operation> -->
-
     <!-- End Epiphan MCA operations -->
 
     <operation
@@ -126,19 +114,6 @@
       </configurations>
     </operation>
 
-    <!-- <operation
-      id="prepare-av"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Preparing presentation audio and video work version">
-      <configurations>
-        <configuration key="source-flavor">presentation/source</configuration>
-        <configuration key="target-flavor">presentation/work</configuration>
-        <configuration key="rewrite">false</configuration>
-        <configuration key="promiscuous-audio-muxing">true</configuration>
-      </configurations>
-    </operation> -->
-
     <!-- encode to hold preview player formats -->
 
     <operation
@@ -153,19 +128,6 @@
         <configuration key="encoding-profile">flash-preview.http</configuration>
       </configurations>
     </operation>
-
-    <!-- <operation
-      id="compose"
-      if="${trimHold}"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Encoding presentation (screen) for preview">
-      <configurations>
-        <configuration key="source-flavor">presentation/work</configuration>
-        <configuration key="target-flavor">presentation/preview</configuration>
-        <configuration key="encoding-profile">flash-preview.http</configuration>
-      </configurations>
-    </operation> -->
 
     <!-- hold to trim media-->
    
@@ -198,20 +160,6 @@
         <configuration key="time">1</configuration>
       </configurations>
     </operation>
-    <!-- <operation
-      id="image"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Encoding presentation (screen) to player preview image">
-      <configurations>
-        <configuration key="source-flavor">presentation/trimmed</configuration>
-        <configuration key="source-tags"></configuration>
-        <configuration key="target-flavor">presentation/player+preview</configuration>
-        <configuration key="target-tags">engage</configuration>
-        <configuration key="encoding-profile">player-preview.http</configuration>
-        <configuration key="time">1</configuration>
-      </configurations>
-    </operation> -->
 
     <!-- encode to engage player formats -->
 
@@ -227,43 +175,6 @@
         <configuration key="encoding-profile">flash.http</configuration>
       </configurations>
     </operation>
-    <!-- <operation
-      id="compose"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Encoding presentation (screen) to Flash download">
-      <configurations>
-        <configuration key="source-flavor">presentation/trimmed</configuration>
-        <configuration key="target-flavor">presentation/delivery</configuration>
-        <configuration key="target-tags">engage</configuration>
-        <configuration key="encoding-profile">flash-vga.http</configuration>
-      </configurations>
-    </operation> -->
-    <operation
-      id="compose"
-      fail-on-error="false"
-      exception-handler-workflow="error"
-      description="Encoding presenter (screen) to flash audio download">
-      <configurations>
-        <configuration key="source-flavor">presenter/trimmed</configuration>
-        <configuration key="target-flavor">presenter/delivery</configuration>
-        <configuration key="target-tags">engage, audio</configuration>
-        <configuration key="encoding-profile">flash-audio.http</configuration>
-      </configurations>
-    </operation>   
-     
-
-    <!-- run the videosegmentation -->
-    
-    <!-- <operation
-      id="segment-video"
-      fail-on-error="false"
-      exception-handler-workflow="error"
-      description="Extracting segments from presentation">
-      <configurations>
-        <configuration key="source-flavor">presentation/trimmed</configuration>
-      </configurations>
-    </operation> -->
 
     <!-- encode to engage search result preview images -->
 
@@ -281,47 +192,7 @@
         <configuration key="time">1</configuration>
       </configurations>
     </operation>
-    <!-- <operation
-      id="image"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Encoding presentation (screen) to search result preview image">
-      <configurations>
-        <configuration key="source-flavor">presentation/trimmed</configuration>
-        <configuration key="source-tags"></configuration>
-        <configuration key="target-flavor">presentation/search+preview</configuration>
-        <configuration key="target-tags">engage</configuration>
-        <configuration key="encoding-profile">search-cover.http</configuration>
-        <configuration key="time">1</configuration>
-      </configurations>
-    </operation> -->
 
-    <!--  encode to feed distribution formats -->
-
-    <!-- <operation
-      id="compose"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Encoding presenter (camera) to mpeg4 audio download">
-      <configurations>
-        <configuration key="source-flavor">presenter/trimmed</configuration>
-        <configuration key="target-flavor">presenter/delivery</configuration>
-        <configuration key="target-tags">rss, atom, audio</configuration>
-        <configuration key="encoding-profile">feed-m4a.http</configuration>
-      </configurations>
-    </operation> -->
-    <!-- <operation
-      id="compose"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Encoding presentation (screen) to mpeg4 audio download">
-      <configurations>
-        <configuration key="source-flavor">presentation/trimmed</configuration>
-        <configuration key="target-flavor">presentation/delivery</configuration>
-        <configuration key="target-tags">rss, atom, audio</configuration>
-        <configuration key="encoding-profile">feed-m4a.http</configuration>
-      </configurations>
-    </operation> -->
     <operation
       id="compose"
       fail-on-error="true"
@@ -334,18 +205,6 @@
         <configuration key="encoding-profile">feed-avi.http</configuration>
       </configurations>
     </operation>
-    <!-- <operation
-      id="compose"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Encoding presentation (screen) to avi/mpeg4 download">
-      <configurations>
-        <configuration key="source-flavor">presentation/trimmed</configuration>
-        <configuration key="target-flavor">presentation/delivery</configuration>
-        <configuration key="target-tags">rss, atom</configuration>
-        <configuration key="encoding-profile">feed-avi.http</configuration>
-      </configurations>
-    </operation> -->
     
     <!-- encode to feed preview images -->
 
@@ -363,52 +222,6 @@
         <configuration key="time">1</configuration>
       </configurations>
     </operation>
-    <!-- <operation
-      id="image"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Encoding presentation (screen) to feed preview image">
-      <configurations>
-        <configuration key="source-flavor">presentation/trimmed</configuration>
-        <configuration key="source-tags"></configuration>
-        <configuration key="target-flavor">presentation/feed+preview</configuration>
-        <configuration key="target-tags">rss, atom</configuration>
-        <configuration key="encoding-profile">feed-cover.http</configuration>
-        <configuration key="time">1</configuration>
-      </configurations>
-    </operation> -->
-
-    <!-- Generate segment previews -->
-    
-    <!-- <operation
-      id="segmentpreviews"
-      fail-on-error="false"
-      exception-handler-workflow="error"
-      description="Encoding presentation (screen) to segment preview image">
-      <configurations>
-        <configuration key="source-flavor">presentation/trimmed</configuration>
-        <configuration key="source-tags"></configuration>
-        <configuration key="target-flavor">presentation/segment+preview</configuration>
-        <configuration key="reference-flavor">presentation/delivery</configuration>
-        <configuration key="reference-tags">engage</configuration>
-        <configuration key="target-tags">engage</configuration>
-        <configuration key="encoding-profile">player-slides.http</configuration>
-      </configurations>
-    </operation> -->
-
-    <!-- Run text analysis -->
-
-    <!-- <operation
-      id="extract-text"
-      fail-on-error="false"
-      exception-handler-workflow="error"
-      description="Extracting text from presentation segments">
-      <configurations>
-        <configuration key="source-flavor">presentation/trimmed</configuration>
-        <configuration key="source-tags"></configuration>
-        <configuration key="target-tags">engage</configuration>
-      </configurations>
-    </operation> -->
 
     <!-- Apply ACL from series to the mediapackage -->
 
