@@ -273,13 +273,14 @@
     </operation>
 
     <!-- Archive the current state of the mediapackage -->
+    <!-- Currently skipped until we decide that we need it-->
 
-    <operation
+    <!--operation
       id="archive"
       fail-on-error="true"
       exception-handler-workflow="error"
       description="Archiving">
-    </operation>
+    </operation-->
  
     <!-- Publish to engage search index -->
  
@@ -300,7 +301,7 @@
       fail-on-error="false"
       description="Cleaning up">
       <configurations>
-        <configuration key="preserve-flavors">*/source,dublincore/*</configuration>
+        <!--configuration key="preserve-flavors">*/source,dublincore/*</configuration-->
       </configurations>
     </operation>
   </operations>
