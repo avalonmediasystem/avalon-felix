@@ -172,7 +172,7 @@
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
         <configuration key="target-tags">engage</configuration>
-        <configuration key="encoding-profile">flash.http</configuration>
+        <configuration key="encoding-profile">mp4-low.http</configuration>
       </configurations>
     </operation>
 
@@ -192,7 +192,7 @@
         <configuration key="time">1</configuration>
       </configurations>
     </operation>
-
+<!--
     <operation
       id="compose"
       fail-on-error="true"
@@ -202,10 +202,10 @@
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
         <configuration key="target-tags">rss, atom</configuration>
-        <configuration key="encoding-profile">feed-avi.http</configuration>
+        <configuration key="encoding-profile">mp4.medium</configuration>
       </configurations>
     </operation>
-    
+-->    
     <!-- encode to feed preview images -->
 
     <operation
