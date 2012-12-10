@@ -184,7 +184,7 @@
 
     <!-- encode to engage player preview images -->
  
-    <operation
+    <!--operation
       id="image"
       fail-on-error="true"
       exception-handler-workflow="error"
@@ -197,7 +197,7 @@
         <configuration key="encoding-profile">player-preview.http</configuration>
         <configuration key="time">1</configuration>
       </configurations>
-    </operation>
+    </operation-->
 
 <!--
     <operation
@@ -246,12 +246,12 @@
       id="compose"
       fail-on-error="false"
       exception-handler-workflow="error"
-      description="Encoding presenter (screen) to flash audio download">
+      description="Encoding presenter (screen) to mp4 audio">
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
         <configuration key="target-tags">engage</configuration>
-        <configuration key="encoding-profile">flash-audio.http</configuration>
+        <configuration key="encoding-profile">mp3-medium.http</configuration>
       </configurations>
     </operation>   
      
