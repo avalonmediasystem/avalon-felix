@@ -168,7 +168,7 @@
       id="compose"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Encoding presenter (camera) video to Flash download">
+      description="Encoding presenter (camera) video to mp4">
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
@@ -235,7 +235,7 @@
 
     <!-- Distribute to download server -->
     
-    <operation
+    <!--operation
       id="distribute-download"
       max-attempts="2"
       fail-on-error="true"
@@ -245,7 +245,7 @@
         <configuration key="source-tags">engage,atom,rss,-publish</configuration>
         <configuration key="target-tags">publish</configuration>
       </configurations>
-    </operation>
+    </operation-->
 
     <operation
       id="distribute-streaming"
@@ -257,19 +257,6 @@
       <configurations>
         <configuration key="source-tags">engage,-publish</configuration>
         <configuration key="target-tags">publish,streaming</configuration>
-      </configurations>
-    </operation>
-
-    <operation
-      id="distribute-hydrant"
-      max-attempts="2"
-      fail-on-error="true"
-      if="${org.opencastproject.hydrant.url}"
-      exception-handler-workflow="error"
-      description="Distributing to Hydrant">
-      <configurations>
-        <configuration key="source-tags">streaming,-audio</configuration>
-        <configuration key="target-tags">hydrant</configuration>
       </configurations>
     </operation>
 
