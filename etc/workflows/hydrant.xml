@@ -168,12 +168,38 @@
       id="compose"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Encoding presenter (camera) video to mp4">
+      description="Encoding presenter (camera) video to mp4-low">
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
-        <configuration key="target-tags">engage</configuration>
+        <configuration key="target-tags">engage, low</configuration>
         <configuration key="encoding-profile">mp4-low.http</configuration>
+      </configurations>
+    </operation>
+
+    <operation
+      id="compose"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Encoding presenter (camera) video to mp4-medium">
+      <configurations>
+        <configuration key="source-flavor">presenter/trimmed</configuration>
+        <configuration key="target-flavor">presenter/delivery</configuration>
+        <configuration key="target-tags">engage, medium</configuration>
+        <configuration key="encoding-profile">mp4-medium.http</configuration>
+      </configurations>
+    </operation>
+
+    <operation
+      id="compose"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Encoding presenter (camera) video to mp4-high">
+      <configurations>
+        <configuration key="source-flavor">presenter/trimmed</configuration>
+        <configuration key="target-flavor">presenter/delivery</configuration>
+        <configuration key="target-tags">engage, high</configuration>
+        <configuration key="encoding-profile">mp4-high.http</configuration>
       </configurations>
     </operation>
 
