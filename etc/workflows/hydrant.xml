@@ -172,7 +172,7 @@
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
-        <configuration key="target-tags">engage, low</configuration>
+        <configuration key="target-tags">engage, quality-low</configuration>
         <configuration key="encoding-profile">mp4-low.http</configuration>
       </configurations>
     </operation>
@@ -185,7 +185,7 @@
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
-        <configuration key="target-tags">engage, medium</configuration>
+        <configuration key="target-tags">engage, quality-medium</configuration>
         <configuration key="encoding-profile">mp4-medium.http</configuration>
       </configurations>
     </operation>
@@ -198,7 +198,7 @@
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
-        <configuration key="target-tags">engage, high</configuration>
+        <configuration key="target-tags">engage, quality-high</configuration>
         <configuration key="encoding-profile">mp4-high.http</configuration>
       </configurations>
     </operation>
