@@ -159,14 +159,28 @@
       id="compose"
       fail-on-error="false"
       exception-handler-workflow="error"
-      description="Encoding presenter audio to mp4 audio">
+      description="Encoding presenter audio to medium aac mp4 audio">
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
-        <configuration key="target-tags">engage</configuration>
+        <configuration key="target-tags">engage, quality-medium</configuration>
         <configuration key="encoding-profile">aac-medium.http</configuration>
       </configurations>
+    </operation>  
+ 
+    <operation
+      id="compose"
+      fail-on-error="false"
+      exception-handler-workflow="error"
+      description="Encoding presenter audio to high aac mp4 audio">
+      <configurations>
+        <configuration key="source-flavor">presenter/trimmed</configuration>
+        <configuration key="target-flavor">presenter/delivery</configuration>
+        <configuration key="target-tags">engage, quality-high</configuration>
+        <configuration key="encoding-profile">aac-high.http</configuration>
+      </configurations>
     </operation>   
+
     <!-- Apply ACL from series to the mediapackage -->
     <operation
       id="apply-acl"
