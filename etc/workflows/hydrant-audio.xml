@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition xmlns="http://workflow.opencastproject.org">
+
+  <id>fullaudio</id>
+  <title>Audio: Encode, Analyze, and Distribute</title>
+  <description>
+    A simple workflow that transcodes the media into distribution formats, then sends the resulting distribution files,
+    along with their associated metadata, to the distribution channels.
+  </description>
+
+  <configuration_panel>
+  <![CDATA[
+    <fieldset>
+      <legend>Holds</legend>
+      <ul class="oc-ui-form-list">       
+          <li class="ui-helper-clearfix"><label class="scheduler-label">Processing should be paused to allow for:</label></li>        
+	  <label class="scheduler-label"></label>
+	  <span id="trimholdconfig">
+            <input type="checkbox" id="trimHold" name="trimHold" class="configField holdCheckbox" value="true">
+            <label for="trimHold" id="i18n_hold_for_trim">&nbsp;Review / Trim before encoding (with option to edit info)</label>
+	  </span>
+      </ul>
+    </fieldset>    
+    <fieldset>
+      <legend>Distribution</legend>
+      <ul class="oc-ui-form-list">
+        <!-- field: License -->
+        <li class="ui-helper-clearfix">
+          <label class="scheduler-label"><span class="color-red">* </span><span id="i18n_dist_label">Distribution Channel(s)</span>:</label>
+          <span id="dist">
+            <input id="distribution" name="distribution" type="checkbox" checked="checked" disabled="disabled" class="configField" value="Matterhorn Media Module" />
+            <span id="i18n_dist_mmm">&nbsp;Matterhorn Media Module</span>
+            <input id="youtube" name="youtube" type="checkbox" disabled="disabled" class="configField" value="Youtube" />
+            <span id="i18n_dist_mmm">&nbsp;Youtube</span>
+            <input id="itunesu" name="itunesu" type="checkbox" disabled="disabled" class="configField" value="iTunesU" />
+            <span id="i18n_dist_mmm">&nbsp;iTunesU</span>
+          </span>
+        </li>
+        <!-- field: License -->
+        <li class="ui-helper-clearfix">
+          <label class="scheduler-label" for="license configField" id="licenseLabel"><span id="i18n_license_label">License</span>:</label>
+          <input type="text" class="oc-ui-form-field" id="license" name="license" maxlength="255" style="width:300px;"/>
+        </li>
+      </ul>
+    </fieldset>
+    <script type="text/javascript">
+      var ocWorkflowPanel = ocWorkflowPanel || {};
+      ocWorkflowPanel.registerComponents = function(components){
+        /* components with keys that begin with 'org.opencastproject.workflow.config' will be passed
+         * into the workflow. The component's nodeKey must match the components array key.
+         *
+         * Example:'org.opencastproject.workflow.config.myProperty' will be availible at ${my.property}
+         */
+        components['org.opencastproject.workflow.config.trimHold'] = new ocAdmin.Component(
+          ['trimHold'],
+          {key: 'org.opencastproject.workflow.config.trimHold'});
+          
+        ocScheduler.dublinCore.components['license'] = new ocAdmin.Component(
+          ['license'],
+          {label: 'licenseLabel', key: 'license'});
+          
+          //etc...
+      }
+      ocWorkflowPanel.setComponentValues = function(values, components){
+        components['org.opencastproject.workflow.config.trimHold'].setValue(values['org.opencastproject.workflow.config.trimHold']);
+        components['license'].setValue(values['license']);
+      }
+    </script>
+  ]]>
+  </configuration_panel>
+
+  <operations>
+    
+    <!-- inspect the media -->
+    
+    <operation
+      id="inspect"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Inspecting the media package">
+    </operation>
+
+    <!-- prepare audio/video tracks -->
+
+    <!-- Begin Epiphan MCA operations -->
+
+    <!-- This section is only relevant for the Epiphan MCA devices, however
+         it needs to be present for those to work.  Since it does not affect
+         normal CA ingests we will leave this in -->
+
+    <operation
+      id="compose"
+      fail-on-error="false"
+      exception-handler-workflow="error"
+      description="Splitting Media (if needed)">
+      <configurations>
+        <configuration key="source-flavor">multitrack/source</configuration>
+        <configuration key="target-flavor">presenter/source</configuration>
+        <configuration key="encoding-profile">epiphan.presenter</configuration>
+      </configurations>
+    </operation>
+
+    <operation
+      id="compose"
+      fail-on-error="false"
+      exception-handler-workflow="error"
+      description="Splitting Media (if needed)">
+      <configurations>
+        <configuration key="source-flavor">multitrack/source</configuration>
+        <configuration key="target-flavor">presentation/source</configuration>
+        <configuration key="encoding-profile">epiphan.presentation</configuration>
+      </configurations>
+    </operation>
+
+    <!-- End Epiphan MCA operations -->
+
+    <operation
+      id="prepare-av"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Preparing presenter audio versions">
+      <configurations>
+        <configuration key="source-flavor">presenter/source</configuration>
+        <configuration key="target-flavor">presenter/work</configuration>
+        <configuration key="rewrite">false</configuration>
+        <configuration key="promiscuous-audio-muxing">true</configuration>
+      </configurations>
+    </operation>
+
+    <!-- encode to hold preview player formats -->
+    <operation
+      id="compose"
+      if="${trimHold}"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Encoding presenter audio for preview">
+      <configurations>
+        <configuration key="source-flavor">presenter/work</configuration>
+        <configuration key="target-flavor">presenter/preview</configuration>
+        <configuration key="encoding-profile">flash-preview.http</configuration>
+      </configurations>
+    </operation>
+
+    <!-- hold to trim media-->   
+    <operation
+      id="trim"
+      if="${trimHold}"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Waiting for user to review / trim recording">
+      <configurations>
+        <configuration key="source-flavor">*/work</configuration>
+        <configuration key="target-flavor-subtype">trimmed</configuration>
+        <configuration key="encoding-profile">trim.work</configuration>
+      </configurations>
+    </operation>  
+
+    <operation
+      id="compose"
+      fail-on-error="false"
+      exception-handler-workflow="error"
+      description="Encoding presenter audio to medium aac mp4 audio">
+      <configurations>
+        <configuration key="source-flavor">presenter/trimmed</configuration>
+        <configuration key="target-flavor">presenter/delivery</configuration>
+        <configuration key="target-tags">engage, quality-medium</configuration>
+        <configuration key="encoding-profile">aac-medium.http</configuration>
+      </configurations>
+    </operation>  
+ 
+    <operation
+      id="compose"
+      fail-on-error="false"
+      exception-handler-workflow="error"
+      description="Encoding presenter audio to high aac mp4 audio">
+      <configurations>
+        <configuration key="source-flavor">presenter/trimmed</configuration>
+        <configuration key="target-flavor">presenter/delivery</configuration>
+        <configuration key="target-tags">engage, quality-high</configuration>
+        <configuration key="encoding-profile">aac-high.http</configuration>
+      </configurations>
+    </operation>   
+
+    <!-- Apply ACL from series to the mediapackage -->
+    <operation
+      id="apply-acl"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Applying access control rules">
+    </operation>
+
+    <!-- Distribute to download server -->
+    <operation
+      id="distribute-download"
+      max-attempts="2"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Distributing to progressive downloads">
+      <configurations>
+        <configuration key="source-tags">engage,atom,rss,-publish</configuration>
+        <configuration key="target-tags">publish</configuration>
+      </configurations>
+    </operation>
+
+    <operation
+      id="distribute-streaming"
+      max-attempts="2"
+      fail-on-error="true"
+      if="${org.opencastproject.streaming.url}"
+      exception-handler-workflow="error"
+      description="Distributing to streaming server">
+      <configurations>
+        <configuration key="source-tags">engage,-publish</configuration>
+        <configuration key="target-tags">publish, streaming</configuration>
+      </configurations>
+    </operation>
+
+    <!-- Archive the current state of the mediapackage -->
+    <!-- Currently skipped until we decide that we need it-->
+
+    <!-- <operation
+      id="archive"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Archiving">
+    </operation> -->
+ 
+    <!-- Publish to engage search index -->
+    <operation
+      id="publish"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Published">
+      <configurations>
+        <configuration key="source-tags">publish</configuration>
+      </configurations>
+    </operation>
+
+    <!-- Cleanup the working file repository -->
+ 
+    <operation
+      id="cleanup"
+      fail-on-error="false"
+      description="Cleaning up">
+      <configurations>
+        <configuration key="preserve-flavors">*/source,dublincore/*</configuration>
+      </configurations>
+    </operation>
+  </operations>
+
+</definition>
