@@ -191,13 +191,13 @@
 
     <!-- Distribute to download server -->
     <operation
-      id="distribute-download"
+      id="distribute-hls"
       max-attempts="2"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Distributing to progressive downloads">
+      description="Distributing to HLS">
       <configurations>
-        <configuration key="source-tags">engage,atom,rss,-publish</configuration>
+        <configuration key="source-tags">engage,-publish</configuration>
         <configuration key="target-tags">publish</configuration>
       </configurations>
     </operation>
