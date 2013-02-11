@@ -260,7 +260,7 @@
     </operation>
 
     <!-- Distribute to download server -->
-    
+<!--    
     <operation
       id="distribute-hls"
       max-attempts="2"
@@ -272,7 +272,7 @@
         <configuration key="target-tags">publish</configuration>
       </configurations>
     </operation>
-
+-->
     <operation
       id="distribute-streaming"
       max-attempts="2"

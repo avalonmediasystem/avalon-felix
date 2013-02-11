@@ -189,7 +189,8 @@
       description="Applying access control rules">
     </operation>
 
-    <!-- Distribute to download server -->
+    <!-- Distribute to HLS -->
+<!--
     <operation
       id="distribute-hls"
       max-attempts="2"
@@ -201,7 +202,7 @@
         <configuration key="target-tags">publish</configuration>
       </configurations>
     </operation>
-
+-->
     <operation
       id="distribute-streaming"
       max-attempts="2"
