@@ -157,7 +157,7 @@
 
     <operation
       id="compose"
-      fail-on-error="false"
+      fail-on-error="true"
       exception-handler-workflow="error"
       description="Encoding presenter audio to medium aac mp4 audio">
       <configurations>
@@ -170,7 +170,7 @@
  
     <operation
       id="compose"
-      fail-on-error="false"
+      fail-on-error="true"
       exception-handler-workflow="error"
       description="Encoding presenter audio to high aac mp4 audio">
       <configurations>
