@@ -79,11 +79,11 @@ org.opencastproject.security.demo.loadusers = true
 org.opencastproject.streaming.url=rtmp://localhost/vod
 
 # The directory where the matterhorn streaming app for Red5 stores the streams
-org.opencastproject.streaming.directory=/opt/adobe/ams/webroot/vod
+org.opencastproject.streaming.directory=/opt/adobe/ams/webroot/avalon
 
 # The base URL of the HLS streaming server, if using distribute-to-hls operation (ususally "http://<SERVER_URL>/<public_dir>").
 # This is needed if using Red5 since it doesn't have HLS capability 
-org.opencastproject.hls.url=http://localhost:3000/public
+org.opencastproject.hls.url=http://localhost:3000/
 
 # The directory where the HLS .m3u8 and .ts files are stored
 # This is needed if using Red5 since it doesn't have HLS capability 
