@@ -1,0 +1,38 @@
+## MAC OS
+.DS_Store
+
+## TEXTMATE
+*.tmproj
+tmtags
+
+## EMACS
+*~
+\#*
+.\#*
+
+## VIM
+*.swp
+*.swo
+
+## OSX
+.DS_Store
+nohup.out
+
+## Cucumber
+
+rerun.txt
+
+## rcov
+coverage.data
+coverage/*
+
+## TEST APP
+pkg/
+spec/dummy/db/*.sqlite3
+spec/dummy/log/*.log
+spec/dummy/tmp/
+
+## Project stuff
+/etc/config.properties
+logs/opencast.*.log
+work/felix-cache/*
