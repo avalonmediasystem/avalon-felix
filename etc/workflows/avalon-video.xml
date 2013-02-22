@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <definition xmlns="http://workflow.opencastproject.org">
 
-  <id>hydrant</id>
-  <title>Encode, Analyze, and Distribute (Hydrant)</title>
+  <id>avalon</id>
+  <title>Encode, Analyze, and Distribute (Avalon)</title>
   <description>
     A simple workflow that transcodes the media into distribution formats, then sends the resulting distribution files,
     along with their associated metadata, to the distribution channels.
