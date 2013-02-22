@@ -451,15 +451,15 @@
     </operation>
 
     <operation
-      id="distribute-hydrant"
+      id="distribute-avalon"
       max-attempts="2"
       fail-on-error="true"
-      if="${org.opencastproject.hydrant.url}"
+      if="${org.opencastproject.avalon.url}"
       exception-handler-workflow="error"
       description="Distributing to Hydrant">
       <configurations>
         <configuration key="source-tags">streaming</configuration>
-        <configuration key="target-tags">hydrant</configuration>
+        <configuration key="target-tags">avalon</configuration>
       </configurations>
     </operation>
 
