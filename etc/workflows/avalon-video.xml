@@ -156,7 +156,7 @@
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="source-tags"></configuration>
         <configuration key="target-flavor">presenter/player+preview</configuration>
-        <configuration key="target-tags">engage</configuration>
+        <configuration key="target-tags">engage, image</configuration>
         <configuration key="encoding-profile">player-preview.http</configuration>
         <configuration key="time">1</configuration>
       </configurations>
@@ -214,25 +214,12 @@
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="source-tags"></configuration>
         <configuration key="target-flavor">presenter/search+preview</configuration>
-        <configuration key="target-tags">engage</configuration>
+        <configuration key="target-tags">engage, image</configuration>
         <configuration key="encoding-profile">search-cover.http</configuration>
         <configuration key="time">1</configuration>
       </configurations>
     </operation>
-<!--
-    <operation
-      id="compose"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Encoding presenter (camera) to avi/mpeg4 download">
-      <configurations>
-        <configuration key="source-flavor">presenter/trimmed</configuration>
-        <configuration key="target-flavor">presenter/delivery</configuration>
-        <configuration key="target-tags">rss, atom</configuration>
-        <configuration key="encoding-profile">mp4.medium</configuration>
-      </configurations>
-    </operation>
--->    
+
     <!-- encode to feed preview images -->
 
     <operation
@@ -244,7 +231,7 @@
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="source-tags"></configuration>
         <configuration key="target-flavor">presenter/feed+preview</configuration>
-        <configuration key="target-tags">rss, atom</configuration>
+        <configuration key="target-tags">rss, atom, image</configuration>
         <configuration key="encoding-profile">feed-cover.http</configuration>
         <configuration key="time">1</configuration>
       </configurations>
@@ -258,6 +245,22 @@
       exception-handler-workflow="error"
       description="Applying access control rules">
     </operation>
+
+    <!-- Distribute to download server -->
+
+    <operation
+      id="distribute-download"
+      max-attempts="2"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Distributing to progressive downloads">
+      <configurations>
+        <configuration key="source-tags">image</configuration>
+        <configuration key="target-tags">publish</configuration>
+      </configurations>
+    </operation>
+
+    <!-- Distribute to streaming server -->
 
     <operation
       id="distribute-streaming"
