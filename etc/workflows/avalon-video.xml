@@ -92,7 +92,7 @@
       id="compose"
       fail-on-error="false"
       exception-handler-workflow="error"
-      description="Splitting Media (if needed)">
+      description="Preprocessing (1/4)">
       <configurations>
         <configuration key="source-flavor">multitrack/source</configuration>
         <configuration key="target-flavor">presenter/source</configuration>
@@ -106,7 +106,7 @@
       id="prepare-av"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Preparing presenter audio and video work versions">
+      description="Preprocessing (2/4)">
       <configurations>
         <configuration key="source-flavor">presenter/source</configuration>
         <configuration key="target-flavor">presenter/work</configuration>
@@ -122,7 +122,7 @@
       if="${trimHold}"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Encoding presenter (camera) video for preview">
+      description="Preprocessing (3/4)">
       <configurations>
         <configuration key="source-flavor">presenter/work</configuration>
         <configuration key="target-flavor">presenter/preview</configuration>
@@ -137,7 +137,7 @@
       if="${trimHold}"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Waiting for user to review / trim recording">
+      description="Preprocessing (4/4)">
       <configurations>
         <configuration key="source-flavor">*/work</configuration>
         <configuration key="target-flavor-subtype">trimmed</configuration>
@@ -151,7 +151,7 @@
       id="image"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Encoding presenter (camera) to player preview image">
+      description="Extracting poster image">
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="source-tags"></configuration>
@@ -168,7 +168,7 @@
       id="compose"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Encoding presenter (camera) video to mp4-low">
+      description="Encoding video to mp4 (low quality)">
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
@@ -181,7 +181,7 @@
       id="compose"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Encoding presenter (camera) video to mp4-medium">
+      description="Encoding video to mp4 (medium quality)">
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
@@ -194,7 +194,7 @@
       id="compose"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Encoding presenter (camera) video to mp4-high">
+      description="Encoding video to mp4 (high quality)">
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
@@ -209,7 +209,7 @@
       id="image"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Encoding presenter (camera) to search result preview image">
+      description="Extracting search result thumbnail">
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="source-tags"></configuration>
@@ -226,7 +226,7 @@
       id="image"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Encoding presenter (camera) to feed preview image">
+      description="Extracting feed thumbnail">
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="source-tags"></configuration>
@@ -268,7 +268,7 @@
       fail-on-error="true"
       if="${org.opencastproject.streaming.url}"
       exception-handler-workflow="error"
-      description="Distributing to streaming server">
+      description="Distributing desktop stream to server">
       <configurations>
         <configuration key="source-tags">engage,-publish</configuration>
         <configuration key="target-tags">publish, streaming</configuration>
@@ -281,7 +281,7 @@
       max-attempts="2"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Distributing to HLS">
+      description="Distributing mobile stream to server">
       <configurations>
         <configuration key="source-tags">engage,-publish</configuration>
         <configuration key="target-tags">publish, hls, streaming</configuration>

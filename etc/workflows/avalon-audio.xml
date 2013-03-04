@@ -92,7 +92,7 @@
       id="compose"
       fail-on-error="false"
       exception-handler-workflow="error"
-      description="Splitting Media (if needed)">
+      description="Preprocessing (1/5)">
       <configurations>
         <configuration key="source-flavor">multitrack/source</configuration>
         <configuration key="target-flavor">presenter/source</configuration>
@@ -104,7 +104,7 @@
       id="compose"
       fail-on-error="false"
       exception-handler-workflow="error"
-      description="Splitting Media (if needed)">
+      description="Preprocessing (2/5)">
       <configurations>
         <configuration key="source-flavor">multitrack/source</configuration>
         <configuration key="target-flavor">presentation/source</configuration>
@@ -118,7 +118,7 @@
       id="prepare-av"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Preparing presenter audio versions">
+      description="Preprocessing (3/5)">
       <configurations>
         <configuration key="source-flavor">presenter/source</configuration>
         <configuration key="target-flavor">presenter/work</configuration>
@@ -133,7 +133,7 @@
       if="${trimHold}"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Encoding presenter audio for preview">
+      description="Preprocessing (4/5)">
       <configurations>
         <configuration key="source-flavor">presenter/work</configuration>
         <configuration key="target-flavor">presenter/preview</configuration>
@@ -147,7 +147,7 @@
       if="${trimHold}"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Waiting for user to review / trim recording">
+      description="Preprocessing (5/5)">
       <configurations>
         <configuration key="source-flavor">*/work</configuration>
         <configuration key="target-flavor-subtype">trimmed</configuration>
@@ -159,7 +159,7 @@
       id="compose"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Encoding presenter audio to medium aac mp4 audio">
+      description="Encoding audio to mp4-aac (medium quality)">
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
@@ -172,7 +172,7 @@
       id="compose"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Encoding presenter audio to high aac mp4 audio">
+      description="Encoding audio to mp4-aac (high quality)">
       <configurations>
         <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
@@ -195,7 +195,7 @@
       fail-on-error="true"
       if="${org.opencastproject.streaming.url}"
       exception-handler-workflow="error"
-      description="Distributing to streaming server">
+      description="Distributing desktop stream to server">
       <configurations>
         <configuration key="source-tags">engage,-publish</configuration>
         <configuration key="target-tags">publish, streaming</configuration>
@@ -208,7 +208,7 @@
       max-attempts="2"
       fail-on-error="true"
       exception-handler-workflow="error"
-      description="Distributing to HLS">
+      description="Distributing mobile stream to server">
       <configurations>
         <configuration key="source-tags">engage,-publish</configuration>
         <configuration key="target-tags">publish, hls, streaming</configuration>
