@@ -317,7 +317,7 @@
       fail-on-error="false"
       description="Cleaning up">
       <configurations>
-        <!--configuration key="preserve-flavors">*/source,dublincore/*</configuration-->
+        <configuration key="preserve-flavors"></configuration>
       </configurations>
     </operation>
   </operations>
