@@ -1,0 +1,11 @@
+Opencast Matterhorn and modifications to it are licensed under the Educational Community License, v. 2.0, as specified in the original Matterhorn distribution: https://opencast.jira.com/svn/MH/tags/1.3.1/docs/licenses.txt .
+
+Files in this repository have been modified from the original distribution. Modifications Copyright 2013 The Trustees of Indiana University and Northwestern University. Modifications are reflected in following jars:
+matterhorn-authorization-xacml-1.4-SNAPSHOT.jar
+matterhorn-distribution-service-streaming-1.4-SNAPSHOT.jar
+matterhorn-ingest-service-impl-1.4-SNAPSHOT.jar
+matterhorn-workspace-api-1.4-SNAPSHOT.jar
+matterhorn-workspace-impl-1.4-SNAPSHOT.jar
+Files not included in the original distribution but containing Opencast Matterhorn code and modifications:
+matterhorn-distribution-service-hls-1.4-SNAPSHOT.jar
+matterhorn-workflow-notifier-avalon-1.4-SNAPSHOT.jar
