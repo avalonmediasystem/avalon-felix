@@ -2,72 +2,11 @@
 <definition xmlns="http://workflow.opencastproject.org">
 
   <id>avalon-skip-transcoding</id>
-  <title>Encode, Analyze, and Distribute (Avalon)</title>
+  <title>Passthrough Encoding, Analyze, and Distribute (Avalon)</title>
   <description>
-    A simple workflow that transcodes the media into distribution formats, then sends the resulting distribution files,
+    A simple workflow that copies the media into distribution formats, then sends the resulting distribution files,
     along with their associated metadata, to the distribution channels.
   </description>
-
-  <configuration_panel>
-  <![CDATA[
-    <fieldset>
-      <legend>Holds</legend>
-      <ul class="oc-ui-form-list">       
-          <li class="ui-helper-clearfix"><label class="scheduler-label">Processing should be paused to allow for:</label></li>        
-    <label class="scheduler-label"></label>
-    <span id="trimholdconfig">
-            <input type="checkbox" id="trimHold" name="trimHold" class="configField holdCheckbox" value="true">
-            <label for="trimHold" id="i18n_hold_for_trim">&nbsp;Review / Trim before encoding (with option to edit info)</label>
-    </span>
-      </ul>
-    </fieldset>    
-    <fieldset>
-      <legend>Distribution</legend>
-      <ul class="oc-ui-form-list">
-        <!-- field: License -->
-        <li class="ui-helper-clearfix">
-          <label class="scheduler-label"><span class="color-red">* </span><span id="i18n_dist_label">Distribution Channel(s)</span>:</label>
-          <span id="dist">
-            <input id="distribution" name="distribution" type="checkbox" checked="checked" disabled="disabled" class="configField" value="Matterhorn Media Module" />
-            <span id="i18n_dist_mmm">&nbsp;Matterhorn Media Module</span>
-            <input id="youtube" name="youtube" type="checkbox" disabled="disabled" class="configField" value="Youtube" />
-            <span id="i18n_dist_mmm">&nbsp;Youtube</span>
-            <input id="itunesu" name="itunesu" type="checkbox" disabled="disabled" class="configField" value="iTunesU" />
-            <span id="i18n_dist_mmm">&nbsp;iTunesU</span>
-          </span>
-        </li>
-        <!-- field: License -->
-        <li class="ui-helper-clearfix">
-          <label class="scheduler-label" for="license configField" id="licenseLabel"><span id="i18n_license_label">License</span>:</label>
-          <input type="text" class="oc-ui-form-field" id="license" name="license" maxlength="255" style="width:300px;"/>
-        </li>
-      </ul>
-    </fieldset>
-    <script type="text/javascript">
-      var ocWorkflowPanel = ocWorkflowPanel || {};
-      ocWorkflowPanel.registerComponents = function(components){
-        /* components with keys that begin with 'org.opencastproject.workflow.config' will be passed
-         * into the workflow. The component's nodeKey must match the components array key.
-         *
-         * Example:'org.opencastproject.workflow.config.myProperty' will be availible at ${my.property}
-         */
-        components['org.opencastproject.workflow.config.trimHold'] = new ocAdmin.Component(
-          ['trimHold'],
-          {key: 'org.opencastproject.workflow.config.trimHold'});
-          
-        ocScheduler.dublinCore.components['license'] = new ocAdmin.Component(
-          ['license'],
-          {label: 'licenseLabel', key: 'license'});
-          
-          //etc...
-      }
-      ocWorkflowPanel.setComponentValues = function(values, components){
-        components['org.opencastproject.workflow.config.trimHold'].setValue(values['org.opencastproject.workflow.config.trimHold']);
-        components['license'].setValue(values['license']);
-      }
-    </script>
-  ]]>
-  </configuration_panel>
 
   <operations>
     
@@ -163,47 +102,6 @@
     </operation>
 
     <!-- encode to engage player formats -->
-
-<!--     
-    <operation
-      id="compose"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Encoding video to mp4 (low quality)">
-      <configurations>
-        <configuration key="source-flavor">presenter/trimmed</configuration>
-        <configuration key="target-flavor">presenter/delivery</configuration>
-        <configuration key="target-tags">engage, quality-low</configuration>
-        <configuration key="encoding-profile">mp4-low.http</configuration>
-      </configurations>
-    </operation>
-
-    <operation
-      id="compose"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Encoding video to mp4 (medium quality)">
-      <configurations>
-        <configuration key="source-flavor">presenter/trimmed</configuration>
-        <configuration key="target-flavor">presenter/delivery</configuration>
-        <configuration key="target-tags">engage, quality-medium</configuration>
-        <configuration key="encoding-profile">mp4-medium.http</configuration>
-      </configurations>
-    </operation>
-
-    <operation
-      id="compose"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Encoding video to mp4 (high quality)">
-      <configurations>
-        <configuration key="source-flavor">presenter/trimmed</configuration>
-        <configuration key="target-flavor">presenter/delivery</configuration>
-        <configuration key="target-tags">engage, quality-high</configuration>
-        <configuration key="encoding-profile">mp4-high.http</configuration>
-      </configurations>
-    </operation>
- -->
 
     <operation
       id="compose"
