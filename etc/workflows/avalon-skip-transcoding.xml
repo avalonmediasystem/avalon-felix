@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definition xmlns="http://workflow.opencastproject.org">
+
+  <id>avalon-skip-transcoding</id>
+  <title>Passthrough Encoding, Analyze, and Distribute (Avalon)</title>
+  <description>
+    A simple workflow that copies the media into distribution formats, then sends the resulting distribution files,
+    along with their associated metadata, to the distribution channels.
+  </description>
+
+  <operations>
+    
+    <!-- inspect the media -->
+    
+    <operation
+      id="inspect"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Inspecting the media package">
+    </operation>
+
+    <!-- prepare audio/video tracks -->
+
+    <!-- Begin Epiphan MCA operations -->
+
+    <!-- This section is only relevant for the Epiphan MCA devices, however
+         it needs to be present for those to work.  Since it does not affect
+         normal CA ingests we will leave this in -->
+
+    <operation
+      id="compose"
+      fail-on-error="false"
+      exception-handler-workflow="error"
+      description="Preprocessing (1/4)">
+      <configurations>
+        <configuration key="source-flavor">multitrack/source</configuration>
+        <configuration key="target-flavor">presenter/source</configuration>
+        <configuration key="encoding-profile">epiphan.presenter</configuration>
+      </configurations>
+    </operation>
+
+    <!-- End Epiphan MCA operations -->
+
+    <operation
+      id="prepare-av"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Preprocessing (2/4)">
+      <configurations>
+        <configuration key="source-flavor">presenter/source</configuration>
+        <configuration key="target-flavor">presenter/work</configuration>
+        <configuration key="rewrite">false</configuration>
+        <configuration key="promiscuous-audio-muxing">true</configuration>
+      </configurations>
+    </operation>
+
+    <!-- encode to hold preview player formats -->
+
+    <operation
+      id="compose"
+      if="${trimHold}"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Preprocessing (3/4)">
+      <configurations>
+        <configuration key="source-flavor">presenter/work</configuration>
+        <configuration key="target-flavor">presenter/preview</configuration>
+        <configuration key="encoding-profile">flash-preview.http</configuration>
+      </configurations>
+    </operation>
+
+    <!-- hold to trim media-->
+   
+    <operation
+      id="trim"
+      if="${trimHold}"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Preprocessing (4/4)">
+      <configurations>
+        <configuration key="source-flavor">*/work</configuration>
+        <configuration key="target-flavor-subtype">trimmed</configuration>
+        <configuration key="encoding-profile">trim.work</configuration>
+      </configurations>
+    </operation>  
+
+    <!-- encode to engage player preview images -->
+ 
+    <operation
+      id="image"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Extracting poster image">
+      <configurations>
+        <configuration key="source-flavor">presenter/trimmed</configuration>
+        <configuration key="source-tags"></configuration>
+        <configuration key="target-flavor">presenter/player+preview</configuration>
+        <configuration key="target-tags">engage, image</configuration>
+        <configuration key="encoding-profile">player-preview.http</configuration>
+        <configuration key="time">2</configuration>
+      </configurations>
+    </operation>
+
+    <!-- encode to engage player formats -->
+
+    <operation
+      id="compose"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Encoding video to mp4 (high quality)">
+      <configurations>
+        <configuration key="source-flavor">presenter/trimmed</configuration>
+        <configuration key="target-flavor">presenter/delivery</configuration>
+        <configuration key="target-tags">engage, quality-high</configuration>
+        <configuration key="encoding-profile">skip-transcoding.http</configuration>
+      </configurations>
+    </operation>
+
+    <!-- encode to engage search result preview images -->
+
+    <operation
+      id="image"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Extracting search result thumbnail">
+      <configurations>
+        <configuration key="source-flavor">presenter/trimmed</configuration>
+        <configuration key="source-tags"></configuration>
+        <configuration key="target-flavor">presenter/search+preview</configuration>
+        <configuration key="target-tags">engage, image</configuration>
+        <configuration key="encoding-profile">search-cover.http</configuration>
+        <configuration key="time">2</configuration>
+      </configurations>
+    </operation>
+
+    <!-- encode to feed preview images -->
+
+    <operation
+      id="image"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Extracting feed thumbnail">
+      <configurations>
+        <configuration key="source-flavor">presenter/trimmed</configuration>
+        <configuration key="source-tags"></configuration>
+        <configuration key="target-flavor">presenter/feed+preview</configuration>
+        <configuration key="target-tags">rss, atom, image</configuration>
+        <configuration key="encoding-profile">feed-cover.http</configuration>
+        <configuration key="time">2</configuration>
+      </configurations>
+    </operation>
+
+    <!-- Apply ACL from series to the mediapackage -->
+
+    <operation
+      id="apply-acl"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Applying access control rules">
+    </operation>
+
+    <!-- Distribute to download server -->
+
+    <operation
+      id="distribute-download"
+      max-attempts="2"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Distributing to progressive downloads">
+      <configurations>
+        <configuration key="source-tags">image</configuration>
+        <configuration key="target-tags">publish</configuration>
+      </configurations>
+    </operation>
+
+    <!-- Distribute to streaming server -->
+
+    <operation
+      id="distribute-streaming"
+      max-attempts="2"
+      fail-on-error="true"
+      if="${org.opencastproject.streaming.url}"
+      exception-handler-workflow="error"
+      description="Distributing desktop stream to server">
+      <configurations>
+        <configuration key="source-tags">engage,-publish</configuration>
+        <configuration key="target-tags">publish, streaming</configuration>
+      </configurations>
+    </operation>
+
+    <!-- distribute-hls must be after distribute-streaming -->
+    <operation
+      id="distribute-hls"
+      max-attempts="2"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Distributing mobile stream to server">
+      <configurations>
+        <configuration key="source-tags">engage,-publish</configuration>
+        <configuration key="target-tags">publish, hls, streaming</configuration>
+      </configurations>
+    </operation>
+
+    <!-- Archive the current state of the mediapackage -->
+    <!-- Currently skipped until we decide that we need it-->
+
+    <!--operation
+      id="archive"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Archiving">
+    </operation-->
+ 
+    <!-- Publish to engage search index -->
+ 
+    <operation
+      id="publish"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Published">
+      <configurations>
+        <configuration key="source-tags">publish</configuration>
+      </configurations>
+    </operation>
+ 
+    <!-- Cleanup the working file repository -->
+ 
+    <operation
+      id="cleanup"
+      fail-on-error="false"
+      description="Cleaning up">
+      <configurations>
+        <configuration key="preserve-flavors"></configuration>
+      </configurations>
+    </operation>
+  </operations>
+
+</definition>
