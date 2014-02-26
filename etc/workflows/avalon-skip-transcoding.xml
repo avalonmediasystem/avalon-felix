@@ -191,6 +191,7 @@
     <!-- distribute-hls must be after distribute-streaming -->
     <operation
       id="distribute-hls"
+      if="${org.opencastproject.hls.directory}"
       max-attempts="2"
       fail-on-error="true"
       exception-handler-workflow="error"
