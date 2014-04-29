@@ -94,8 +94,9 @@
     <!--
       2-legged oauth is used by trusted 3rd party applications, including LTI producers.
       If you do not plan to use OAuth, comment this out.
-    -->
+    -/->
     <sec:custom-filter after="BASIC_AUTH_FILTER" ref="oauthProtectedResourceFilter" />
+    -->
 
     <!-- Enables "remember me" functionality -->
     <sec:remember-me key="matterhorn" user-service-ref="userDetailsService" />
@@ -176,7 +177,7 @@
   <!-- ####################### -->
   <!-- # OAuth (LTI) Support # -->
   <!-- ####################### -->
-
+  <!--
   <bean name="oAuthConsumerDetailsService" class="org.opencastproject.kernel.security.OAuthSingleConsumerDetailsService">
     <constructor-arg index="0" ref="userDetailsService" />
     <constructor-arg index="1" value="consumerkey" />
@@ -202,11 +203,11 @@
             <value>trustedKey2</value>
           </list>
 	      </constructor-arg>
-	      -->
+	      -/->
       </bean>
     </property>
   </bean>
-
+  -->
   <!-- #################### -->
   <!-- # OSGI Integration # -->
   <!-- #################### -->
