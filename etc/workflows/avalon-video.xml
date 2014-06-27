@@ -145,23 +145,6 @@
       </configurations>
     </operation>  
 
-    <!-- encode to engage player preview images -->
- 
-    <operation
-      id="image"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Extracting poster image">
-      <configurations>
-        <configuration key="source-flavor">presenter/trimmed</configuration>
-        <configuration key="source-tags"></configuration>
-        <configuration key="target-flavor">presenter/player+preview</configuration>
-        <configuration key="target-tags">engage, image</configuration>
-        <configuration key="encoding-profile">player-preview.http</configuration>
-        <configuration key="time">2</configuration>
-      </configurations>
-    </operation>
-
     <!-- encode to engage player formats -->
 
     <operation
@@ -203,40 +186,6 @@
       </configurations>
     </operation>
 
-    <!-- encode to engage search result preview images -->
-
-    <operation
-      id="image"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Extracting search result thumbnail">
-      <configurations>
-        <configuration key="source-flavor">presenter/trimmed</configuration>
-        <configuration key="source-tags"></configuration>
-        <configuration key="target-flavor">presenter/search+preview</configuration>
-        <configuration key="target-tags">engage, image</configuration>
-        <configuration key="encoding-profile">search-cover.http</configuration>
-        <configuration key="time">2</configuration>
-      </configurations>
-    </operation>
-
-    <!-- encode to feed preview images -->
-
-    <operation
-      id="image"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Extracting feed thumbnail">
-      <configurations>
-        <configuration key="source-flavor">presenter/trimmed</configuration>
-        <configuration key="source-tags"></configuration>
-        <configuration key="target-flavor">presenter/feed+preview</configuration>
-        <configuration key="target-tags">rss, atom, image</configuration>
-        <configuration key="encoding-profile">feed-cover.http</configuration>
-        <configuration key="time">2</configuration>
-      </configurations>
-    </operation>
-
     <!-- Apply ACL from series to the mediapackage -->
 
     <operation
@@ -244,20 +193,6 @@
       fail-on-error="true"
       exception-handler-workflow="error"
       description="Applying access control rules">
-    </operation>
-
-    <!-- Distribute to download server -->
-
-    <operation
-      id="distribute-download"
-      max-attempts="2"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Distributing to progressive downloads">
-      <configurations>
-        <configuration key="source-tags">image</configuration>
-        <configuration key="target-tags">publish</configuration>
-      </configurations>
     </operation>
 
     <!-- Distribute to streaming server -->
