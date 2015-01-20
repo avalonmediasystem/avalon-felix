@@ -19,72 +19,33 @@
       description="Inspecting the media package">
     </operation>
 
-    <!-- prepare audio/video tracks -->
-
-    <!-- Begin Epiphan MCA operations -->
-
-    <!-- This section is only relevant for the Epiphan MCA devices, however
-         it needs to be present for those to work.  Since it does not affect
-         normal CA ingests we will leave this in -->
-
-    <operation
-      id="compose"
-      fail-on-error="false"
-      exception-handler-workflow="error"
-      description="Preprocessing (1/4)">
-      <configurations>
-        <configuration key="source-flavor">multitrack/source</configuration>
-        <configuration key="target-flavor">presenter/source</configuration>
-        <configuration key="encoding-profile">epiphan.presenter</configuration>
-      </configurations>
-    </operation>
-
-    <!-- End Epiphan MCA operations -->
-
-    <operation
-      id="prepare-av"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Preprocessing (2/4)">
-      <configurations>
-        <configuration key="source-flavor">presenter/source</configuration>
-        <configuration key="target-flavor">presenter/work</configuration>
-        <configuration key="rewrite">false</configuration>
-        <configuration key="promiscuous-audio-muxing">true</configuration>
-      </configurations>
-    </operation>
-
-    <!-- encode to hold preview player formats -->
-
-    <operation
-      id="compose"
-      if="${trimHold}"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Preprocessing (3/4)">
-      <configurations>
-        <configuration key="source-flavor">presenter/work</configuration>
-        <configuration key="target-flavor">presenter/preview</configuration>
-        <configuration key="encoding-profile">flash-preview.http</configuration>
-      </configurations>
-    </operation>
-
-    <!-- hold to trim media-->
-   
-    <operation
-      id="trim"
-      if="${trimHold}"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Preprocessing (4/4)">
-      <configurations>
-        <configuration key="source-flavor">*/work</configuration>
-        <configuration key="target-flavor-subtype">trimmed</configuration>
-        <configuration key="encoding-profile">trim.work</configuration>
-      </configurations>
-    </operation>  
-
     <!-- encode to engage player formats -->
+
+    <operation
+      id="compose"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Encoding video to mp4 (low quality)">
+      <configurations>
+        <configuration key="target-flavor">presenter/delivery</configuration>
+        <configuration key="source-tags">quality-low</configuration>
+        <configuration key="target-tags">engage, quality-low</configuration>
+        <configuration key="encoding-profile">skip-transcoding.http</configuration>
+      </configurations>
+    </operation>
+
+     <operation
+      id="compose"
+      fail-on-error="true"
+      exception-handler-workflow="error"
+      description="Encoding video to mp4 (medium quality)">
+      <configurations>
+        <configuration key="target-flavor">presenter/delivery</configuration>
+        <configuration key="source-tags">quality-medium</configuration>
+        <configuration key="target-tags">engage, quality-medium</configuration>
+        <configuration key="encoding-profile">skip-transcoding.http</configuration>
+      </configurations>
+    </operation>
 
     <operation
       id="compose"
@@ -92,8 +53,8 @@
       exception-handler-workflow="error"
       description="Encoding video to mp4 (high quality)">
       <configurations>
-        <configuration key="source-flavor">presenter/trimmed</configuration>
         <configuration key="target-flavor">presenter/delivery</configuration>
+        <configuration key="source-tags">quality-high</configuration>
         <configuration key="target-tags">engage, quality-high</configuration>
         <configuration key="encoding-profile">skip-transcoding.http</configuration>
       </configurations>
@@ -136,16 +97,6 @@
         <configuration key="target-tags">publish, hls, streaming</configuration>
       </configurations>
     </operation>
-
-    <!-- Archive the current state of the mediapackage -->
-    <!-- Currently skipped until we decide that we need it-->
-
-    <!--operation
-      id="archive"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Archiving">
-    </operation-->
  
     <!-- Publish to engage search index -->
  
