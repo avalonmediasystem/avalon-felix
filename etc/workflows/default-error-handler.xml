@@ -11,12 +11,12 @@
       exception-handler-workflow="error"
       description="Cleaning up">
       <configurations>
-        <configuration key="preserve-flavors">*/source,dublincore/*</configuration>
+        <configuration key="preserve-flavors"></configuration>
       </configurations>
     </operation>
 
     <!-- Zip the mediapackage -->
-
+<!--
     <operation
       id="zip"
       description="Cleaning up after failure">
@@ -26,7 +26,7 @@
         <configuration key="compression">false</configuration>
       </configurations>
     </operation>
-  
+-->  
   </operations>
   
 </definition>
