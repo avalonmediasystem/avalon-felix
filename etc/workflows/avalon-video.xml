@@ -210,20 +210,6 @@
       </configurations>
     </operation>
 
-    <!-- distribute-hls must be after distribute-streaming -->
-    <operation
-      id="distribute-hls"
-      if="${org.opencastproject.hls.directory}"
-      max-attempts="2"
-      fail-on-error="true"
-      exception-handler-workflow="error"
-      description="Distributing mobile stream to server">
-      <configurations>
-        <configuration key="source-tags">engage,-publish</configuration>
-        <configuration key="target-tags">publish, hls, streaming</configuration>
-      </configurations>
-    </operation>
-
     <!-- Archive the current state of the mediapackage -->
     <!-- Currently skipped until we decide that we need it-->
 
